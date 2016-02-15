@@ -442,24 +442,23 @@ footer {
           text-decoration: none; }
       footer .wrap .mod_info_footer > div li {
         display: inline-block;
-        width: 15px;
-        height: 15px;
         margin-right: 30px; }
         footer .wrap .mod_info_footer > div li a {
-          background: url("../img/icons/social.png") no-repeat;
           display: block;
-          width: 15px;
-          height: 15px;
-          background-size: 100%; }
-        footer .wrap .mod_info_footer > div li.twitter a:hover {
-          background-position: 0 -45px; }
-        footer .wrap .mod_info_footer > div li.facebook a {
-          background-position: 0 -15px; }
-          footer .wrap .mod_info_footer > div li.facebook a:hover {
-            background-position: 0 -60px; }
-        footer .wrap .mod_info_footer > div li.linkedin a {
-          background-position: 0 -30px; }
-          footer .wrap .mod_info_footer > div li.linkedin a:hover {
-            background-position: 0 -75px; }
+          width: 12px;
+          overflow: hidden;
+          font-size: 20px; }
+          footer .wrap .mod_info_footer > div li a:hover {
+            color: #e11424; }
+          footer .wrap .mod_info_footer > div li a i {
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto; }
+        footer .wrap .mod_info_footer > div li.twitter a i:after {
+          content: "\f09a"; }
+        footer .wrap .mod_info_footer > div li.facebook a i:after {
+          content: "\f09a"; }
+        footer .wrap .mod_info_footer > div li.linkedin a i:after {
+          content: "\f0e1"; }
         footer .wrap .mod_info_footer > div li:last-child {
           margin-right: 0; }
