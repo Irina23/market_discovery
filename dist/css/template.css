@@ -147,3 +147,20 @@ input[type="text"]{
 img{
     max-width: 100%;
 }
+
+
+.slider .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#bar{
+    width: 0;
+    max-width: 100%;
+    height: 10px;
+    background: #e11424;
+}
+#progressBar{
+    width: 100%;
+    background: #EDEDED;
+}

@@ -5,88 +5,180 @@ html(lang="ru")
 
     body
         .page_wrapper.home
-            include ./header.jade
+            header
+                .top
+                    .wrap
+
+                        .phone
+                            a(href="tel:+48791145132") +48 791 145 132
+                            a(href="tel:+48791145132") +48 791 145 132
+
+                        .email
+                            a(href="mailto:marketdiscovery@gmail.com") marketdiscovery@gmail.com
+                        .skype
+                            a(href="skype:Marketdiscovery?chat" title="Marketdiscovery") Marketdiscovery
+
+
+                        .lang
+                            .ru.active
+                                a(href="#") Русский
+                            .en
+                                a(href="#") English
+
+                .header
+                    .menu_wrap
+                        .wrap
+                            .logo
+                                a(href="/")
+                                    img(src="/img/content/logo.png")
+                            .menu
+                                ul
+                                    li.active
+                                        a(href="/") Главная
+                                    li
+                                        a(href="#") О компании
+                                    li
+                                        a(href="#") Услуги
+                                    li
+                                        a(href="#") Блог
+                                    li
+                                        a(href="#") Контакты
+
+                    .slider
+                        .item
+                            .content-slider
+                                h3 Маркетинговый анализ
+                                p Узнать все о немецком рынке
+                                a(href="#") Узнать больше
+                        .item
+                            .content-slider
+                                h3 Бизнес - план
+                                p lorem ipsum
+                                a(href="#") Узнать больше
+                        .item
+                            .content-slider
+                                h3 Web-Development & Online Marketing
+                                p lorem ipsum
+                                a(href="#") Узнать больше
+                        .item
+                            .content-slider
+                                h3 Branding & Corporate design
+                                p lorem ipsum
+                                a(href="#") Узнать больше
 
             div.container
-                .wrap
-                    .services
-                        h3 Наши услуги
-                        ul
-                            li
-                                .img-holder
-                                    img(src="/img/content/service1.png")
-                                h4 Маркетинговый анализ
-                                p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
-                                a(href="#", class="readmore") Читать больше
-
-                            li
-                                .img-holder
-                                    img(src="/img/content/service2.png")
-                                h4 Бизнес - план
-                                p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
-                                a(href="#", class="readmore") Читать больше
-
-                            li
-                                .img-holder
-                                    img(src="/img/content/service3.png")
-                                h4 Web-Development & Online Marketing
-                                p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
-                                a(href="#", class="readmore") Читать больше
-
-                            li
-                                .img-holder
-                                    img(src="/img/content/service4.png")
-                                h4 Branding & Corporate design
-                                p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
-                                a(href="#", class="readmore") Читать больше
-
-
-                .mod_advantage
-                        h3 Наши преимущества
-                        .advantages
+                    .wrap
+                        .services
+                            h3 Наши услуги
                             ul
                                 li
                                     .img-holder
-                                        img(src="/img/content/advantage1.png")
-                                    h4 Цены
-                                    p Экономьте от 10% стоимости каждой услуги.
+                                        img(src="/img/content/service1.png")
+                                    h4 Маркетинговый анализ
+                                    p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+                                    a(href="#", class="readmore") Читать больше
 
                                 li
                                     .img-holder
-                                        img(src="/img/content/advantage2.png")
-                                    h4 Персональный подход
-                                    p Мы работаем 24/7 ради наших клиентов. Все наши услуги подстраиваются под каждого клиента персонально.
+                                        img(src="/img/content/service2.png")
+                                    h4 Бизнес - план
+                                    p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+                                    a(href="#", class="readmore") Читать больше
 
                                 li
                                     .img-holder
-                                        img(src="/img/content/advantage3.png")
-                                    h4 Понимание культурных особенностей
-                                    p Мы живем в Германии долгое время, поэтому понимаем о ней намного больше, чем просто цифры.
-                                li
-                                    .img-holder
-                                        img(src="/img/content/advantage4.png")
-                                    h4 Поддержка от начала до конца
-                                    p Заручитесь поддержкой от начала планирования до первого клиента
+                                        img(src="/img/content/service3.png")
+                                    h4 Web-Development & Online Marketing
+                                    p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+                                    a(href="#", class="readmore") Читать больше
 
                                 li
+                                    .img-holder
+                                        img(src="/img/content/service4.png")
+                                    h4 Branding & Corporate design
+                                    p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+                                    a(href="#", class="readmore") Читать больше
+
+
+                    .mod_advantage
+                            h3 Наши преимущества
+                            .advantages
+                                ul.cf
+                                    li
+                                        .img-holder
+                                            img(src="/img/content/advantage1.png")
+                                        h4 Цены
+                                        p Экономьте от 10% стоимости каждой услуги.
+
+                                    li
                                         .img-holder
                                             img(src="/img/content/advantage2.png")
                                         h4 Персональный подход
                                         p Мы работаем 24/7 ради наших клиентов. Все наши услуги подстраиваются под каждого клиента персонально.
-                                li
+
+                                    li
                                         .img-holder
                                             img(src="/img/content/advantage3.png")
                                         h4 Понимание культурных особенностей
                                         p Мы живем в Германии долгое время, поэтому понимаем о ней намного больше, чем просто цифры.
-                                li
+                                    li
                                         .img-holder
                                             img(src="/img/content/advantage4.png")
                                         h4 Поддержка от начала до конца
                                         p Заручитесь поддержкой от начала планирования до первого клиента
 
+                                    li
+                                            .img-holder
+                                                img(src="/img/content/advantage5.png")
+                                            h4 Долгосрочные отношения
+                                            p Рассчитывайте на долгосрочное сотрудничество, так как наша цель - это ваше чувство уверенности и рост на немецком рынке.
+                                    li
+                                            .img-holder
+                                                img(src="/img/content/advantage6.png")
+                                            h4 Самая актуальная информация
+                                            p Получите самую актуальную информацию о рынке, технологиях, конкурентах или продуктах. Мы идём в ногу со временем.
+
+
+
+
+                    .mod_popular_article
+                        h3 Популярные статьи
+
+                        .item-popular
+                            .item-article
+                                    .img-holder
+                                        a(href="#")
+                                            img(src="/img/content/article1.jpg")
+                                    h4
+                                        a(href="#") Супер название статьи
+                                    .data January 23 / 2016
+                                    .text При создании генератора использовали небезызвестный универсальный код речей.
+                                    a(href="#", class="readmore") Читать больше
+
+                            .item-article
+                                    .img-holder
+                                        a(href="#")
+                                            img(src="/img/content/article2.jpg")
+                                    h4
+                                        a(href="#") Супер название статьи
+                                    .data January 23 / 2016
+                                    .text При создании генератора использовали небезызвестный универсальный код речей.
+                                    a(href="#", class="readmore") Читать больше
+
+                            .item-article
+                                    .img-holder
+                                        a(href="#")
+                                            img(src="/img/content/article3.jpg")
+                                    h4
+                                        a(href="#") Супер название статьи
+                                    .data January 23 / 2016
+                                    .text При создании генератора использовали небезызвестный универсальный код речей.
+                                    a(href="#", class="readmore") Читать больше
 
 
 
 
 
-include ./footer.jade
+
+
+            include ./footer.jade
