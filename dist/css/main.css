@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("../fonts/SegoeUI-Light.eot");
+  src: url("../fonts/SegoeUI-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/SegoeUI.eot");
+  src: url("../fonts/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUI-Semibold";
+  src: url("../fonts/SegoeUI-SemiBold.eot");
+  src: url("../fonts/SegoeUI-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI-SemiBold.woff") format("woff"), url("../fonts/SegoeUI-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: "SegoeUI", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  font-size: 14px; }
+
+.wrap {
+  width: 940px;
+  margin: auto; }
+
+#cache {
+  display: none; }
+
+.top {
+  background: #f3f5f7;
+  padding: 30px 0 20px; }
+  .top .wrap > div {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+    margin-right: 50px; }
+    .top .wrap > div:last-child {
+      margin-right: 0; }
+    .top .wrap > div:after {
+      content: "";
+      background: url("../img/icons/phone.png") no-repeat;
+      background-size: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 20px;
+      height: 20px; }
+    .top .wrap > div a {
+      font-family: 'SegoeUI', sans-serif;
+      color: #253d5c;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.09px;
+      line-height: 1em;
+      display: block; }
+      .top .wrap > div a:hover {
+        color: #e11424;
+        text-decoration: none; }
+  .top .wrap .phone a {
+    margin-bottom: 7px; }
+    .top .wrap .phone a:last-child {
+      margin-bottom: 0; }
+  .top .wrap .email:after {
+    background: url("../img/icons/email.png") no-repeat;
+    background-size: 100%; }
+  .top .wrap .skype:after {
+    background: url("../img/icons/skype.png") no-repeat;
+    background-size: 100%; }
+  .top .wrap .lang:after {
+    background: url("../img/icons/lang.png") no-repeat;
+    background-size: 100%; }
+  .top .wrap .lang > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px; }
+    .top .wrap .lang > div:last-child {
+      margin-right: 0; }
+  .top .wrap .lang .active a {
+    color: #e11424;
+    border-color: #e11424; }
+  .top .wrap .lang a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(225, 20, 36, 0); }
+    .top .wrap .lang a:hover {
+      color: #e11424;
+      text-decoration: none; }
+
+.page_wrapper.home .top {
+  background: #fff; }
+
+.services {
+  padding: 70px 0 100px; }
+  .services h3 {
+    text-align: center;
+    line-height: 1em;
+    font-weight: normal;
+    font-family: "SegoeUI-Semibold", sans-serif;
+    color: #253d5c;
+    font-size: 36px;
+    margin-bottom: 70px; }
+  .services ul {
+    margin: 0 -10px; }
+    .services ul li {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 10px;
+      width: 24%;
+      text-align: center;
+      box-sizing: border-box; }
+      .services ul li .img-holder {
+        margin-bottom: 30px; }
+        .services ul li .img-holder img {
+          height: 100px; }
+      .services ul li h4 {
+        font-family: "SegoeUI-Semibold", sans-serif;
+        color: #253d5c;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0.09px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        height: 48px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .services ul li p {
+        font-family: "SegoeUILight", sans-serif;
+        color: #526680;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.08px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 25px; }
+      .services ul li a.readmore {
+        font-family: "SegoeUI", sans-serif;
+        color: #e11424;
+        font-size: 16px;
+        letter-spacing: 0.08px;
+        line-height: 24px;
+        display: block;
+        position: relative; }
+        .services ul li a.readmore:after {
+          content: "";
+          background: url("../img/icons/readmore.png") no-repeat;
+          display: inline-block;
+          background-size: 100%;
+          width: 4px;
+          height: 8px;
+          margin-left: 6px; }
+
+.mod_advantage h3 {
+  text-align: center;
+  line-height: 1em;
+  font-weight: normal;
+  font-family: "SegoeUI-Semibold", sans-serif;
+  color: #253d5c;
+  font-size: 36px;
+  margin-bottom: 100px; }
+
+.mod_advantage .advantages {
+  background: url("../img/bg/bg_advantage.jpg") no-repeat center;
+  background-size: 100%; }
+  .mod_advantage .advantages ul {
+    width: 940px;
+    margin: auto; }

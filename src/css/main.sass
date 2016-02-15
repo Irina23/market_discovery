@@ -1,0 +1,218 @@
+$main-blue: #253d5c
+$color-red: #e11424
+
+@font-face
+  font-family: "SegoeUILight"
+  src: url("../fonts/SegoeUI-Light.eot")
+  src: url("../fonts/SegoeUI-Light.eot?#iefix")format("embedded-opentype"),url("../fonts/SegoeUI-Light.woff") format("woff"),url("../fonts/SegoeUI-Light.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+@font-face
+  font-family: "SegoeUI"
+  src: url("../fonts/SegoeUI.eot")
+  src: url("../fonts/SegoeUI.eot?#iefix")format("embedded-opentype"),url("../fonts/SegoeUI.woff") format("woff"),url("../fonts/SegoeUI.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+
+@font-face
+  font-family: "SegoeUI-Semibold"
+  src: url("../fonts/SegoeUI-SemiBold.eot")
+  src: url("../fonts/SegoeUI-SemiBold.eot?#iefix")format("embedded-opentype"),url("../fonts/SegoeUI-SemiBold.woff") format("woff"),url("../fonts/SegoeUI-SemiBold.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+
+
+
+body
+  font-family: "SegoeUI", sans-serif
+  padding: 0
+  margin: 0
+  line-height: 1em
+  font-size: 14px
+
+
+.wrap
+  width: 940px
+  margin: auto
+
+
+#cache
+  display: none
+
+
+
+.top
+  background: #f3f5f7
+  padding: 30px 0 20px
+  .wrap
+    > div
+      display: inline-block
+      vertical-align: top
+      padding-left: 30px
+      position: relative
+      margin-right: 50px
+      &:last-child
+        margin-right: 0
+      &:after
+        content: ""
+        background: url("../img/icons/phone.png") no-repeat
+        background-size: 100%
+        left: 0
+        top: 0
+        position: absolute
+        width: 20px
+        height: 20px
+
+
+      a
+        font-family: 'SegoeUI', sans-serif
+        color:  #253d5c
+        font-size: 18px
+        font-weight: 400
+        letter-spacing: 0.09px
+        line-height: 1em
+        display: block
+        &:hover
+          color: $color-red
+          text-decoration: none
+
+
+    .phone
+      a
+        margin-bottom: 7px
+        &:last-child
+          margin-bottom: 0
+    .email
+      &:after
+        background: url("../img/icons/email.png") no-repeat
+        background-size: 100%
+
+    .skype
+      &:after
+        background: url("../img/icons/skype.png") no-repeat
+        background-size: 100%
+    .lang
+      &:after
+        background: url("../img/icons/lang.png") no-repeat
+        background-size: 100%
+      >div
+        display: inline-block
+        vertical-align: middle
+        margin-right: 30px
+        &:last-child
+          margin-right: 0
+      .active
+        a
+          color: $color-red
+          border-color: $color-red
+
+
+      a
+        text-decoration: none
+        padding-bottom: 5px
+        border-bottom: 2px solid rgba(225, 20, 36, 0)
+        &:hover
+          color: $color-red
+          text-decoration: none
+
+
+
+.page_wrapper
+  &.home
+    .top
+      background: #fff
+
+
+
+
+
+.services
+  padding: 70px 0 100px
+  h3
+    text-align: center
+    line-height: 1em
+    font-weight: normal
+    font-family: "SegoeUI-Semibold", sans-serif
+    color: $main-blue
+    font-size: 36px
+    margin-bottom: 70px
+
+
+  ul
+    margin: 0 -10px
+    li
+      display: inline-block
+      vertical-align: top
+      padding: 0 10px
+      width: 24%
+      text-align: center
+      box-sizing: border-box
+      .img-holder
+        margin-bottom: 30px
+        img
+          height: 100px
+      h4
+        font-family: "SegoeUI-Semibold", sans-serif
+        color:  $main-blue
+        font-size: 18px
+        font-weight: normal
+        letter-spacing: 0.09px
+        line-height: 24px
+        text-align: center
+        margin-bottom: 25px
+        height: 48px
+        overflow: hidden
+        text-overflow: ellipsis
+
+
+      p
+        font-family: "SegoeUILight", sans-serif
+        color:  #526680
+        font-size: 16px
+        font-weight: 300
+        letter-spacing: 0.08px
+        line-height: 24px
+        text-align: center
+        margin-bottom: 25px
+
+      a.readmore
+        font-family: "SegoeUI", sans-serif
+        color:  $color-red
+        font-size: 16px
+        letter-spacing: 0.08px
+        line-height: 24px
+        display: block
+        position: relative
+        &:after
+          content: ""
+          background: url("../img/icons/readmore.png") no-repeat
+          display: inline-block
+          background-size: 100%
+          width: 4px
+          height: 8px
+          margin-left: 6px
+
+
+
+.mod_advantage
+  h3
+    text-align: center
+    line-height: 1em
+    font-weight: normal
+    font-family: "SegoeUI-Semibold", sans-serif
+    color: $main-blue
+    font-size: 36px
+    margin-bottom: 100px
+
+  .advantages
+    background: url("../img/bg/bg_advantage.jpg") no-repeat center
+    background-size: 100%
+    ul
+      width: 940px
+      margin: auto
+      li
+        
+
