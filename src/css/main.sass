@@ -32,6 +32,11 @@ body
   margin: 0
   line-height: 1em
   font-size: 14px
+  p
+      color:  #526680
+      font-size: 16px
+      letter-spacing: 0.08px
+      line-height: 24px
 
 
 .wrap
@@ -214,7 +219,7 @@ body
         width: 300px
         float: left
         background: url("../img/bg/advantage.png") no-repeat bottom center
-        height: 295px
+        height: 292px
         margin-right: 20px
         margin-bottom: 20px
         overflow: hidden
@@ -412,7 +417,7 @@ header
           line-height: 30px
           letter-spacing: 0.12px
           font-weight: normal
-            overflow: hidden
+          overflow: hidden
           &:hover
             text-decoration: none
             transition: all .3s
@@ -481,6 +486,16 @@ header
         width: 100%
         z-index: 5
 
+  &.about
+    header
+      .menu_wrap
+        background:  rgba(255, 255, 255, 0.65)
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        z-index: 5
 
 footer
   background: url("../img/bg/bg_footer.jpg") no-repeat center
@@ -537,7 +552,7 @@ footer
           a
             //background: url("../img/icons/social.png") no-repeat
             display: block
-            width: 12px
+            //width: 12px
             overflow: hidden
             //height: 15px
             //background-size: 100%
@@ -554,24 +569,203 @@ footer
 
           &.twitter
             a
+              //width: 12px
 
               i
-                &:after
-                  content: "\f09a"
+                &:before
+                  content: "\f173"
+
+
 
           &.facebook
             a
+              //width: 8px
               i
-                &:after
+                &:before
                   content: "\f09a"
 
           &.linkedin
-            a
 
+
+
+            a
+              //width: 17px
               i
-                &:after
+                &:before
                   content: "\f0e1"
 
 
           &:last-child
             margin-right: 0
+
+
+
+
+
+.image-about
+  background: url("../img/bg/bg_about.jpg") no-repeat
+  background-size: cover
+  height: 395px
+  position: relative
+
+  .content-image
+    background:  rgba(37, 61, 92, 0.65)
+    width: 800px
+    padding: 30px 20px 20px
+    box-sizing:  border-box
+
+    position: absolute
+    top: 170px
+    left: 50%
+    margin-left: -400px
+
+    p
+      color:  #ffffff
+      font-size: 22px
+      font-style: italic
+      letter-spacing: 0.11px
+      line-height: 2em
+
+    span
+      float: right
+      font-family: "SegoeUI-Semibold", sans-serif
+      color:  #ffffff
+      font-size: 16px
+      font-style: italic
+      letter-spacing: 0.08px
+      line-height: 16px
+
+
+
+
+
+.mod_advantage2
+  margin-bottom: 50px
+  h3
+    text-align: center
+    line-height: 1em
+    font-weight: normal
+    font-family: "SegoeUI-Semibold", sans-serif
+    color: $main-blue
+    font-size: 36px
+    margin-bottom: 75px
+
+  .advantages
+
+    ul
+
+
+      li
+        width: 300px
+        float: left
+        background: url("../img/bg/bg_advantage2.png") no-repeat bottom center
+        height: 292px
+        margin-right: 20px
+        margin-bottom: 20px
+        overflow: hidden
+        padding: 0 10px
+        box-sizing: border-box
+        &:nth-child(3n)
+          margin-right: 0
+
+        .img-holder
+          width: 91px
+          height: 91px
+          margin: auto
+          margin-bottom: 20px
+
+
+        h4
+          margin-bottom: 20px
+          line-height: 1em
+          text-align: center
+          color: $main-blue
+          font-size: 18px
+          font-family: "SegoeUI-Semibold", sans-serif
+          letter-spacing: 0.09px
+        p
+          text-align: center
+          color: $main-blue
+          font-size: 16px
+          letter-spacing: 0.08px
+          line-height: 24px
+
+
+
+
+.mod_about
+  margin-top: 70px
+  margin-bottom: 115px
+  h3
+    text-align: center
+    line-height: 1em
+    font-weight: normal
+    font-family: "SegoeUI-Semibold", sans-serif
+    color: $main-blue
+    font-size: 36px
+    margin-bottom: 75px
+    letter-spacing: 0.18px
+
+
+  .img-holder
+    float: left
+    margin-right: 60px
+
+    img
+      width: 480px
+
+  .text
+    overflow: hidden
+    color:  #526680
+    font-size: 16px
+    letter-spacing: 0.08px
+    line-height: 24px
+
+
+.mod_our_plus
+  margin-bottom: 100px
+  h3
+    text-align: center
+    line-height: 1em
+    font-weight: normal
+    font-family: "SegoeUI-Semibold", sans-serif
+    color: $main-blue
+    font-size: 36px
+    margin-bottom: 100px
+    letter-spacing: 0.18px
+
+
+  .items
+    .item-plus
+      display: inline-block
+      vertical-align: top
+      width: 220px
+      margin-right: 15px
+      &:last-child
+        margin-right: 0
+      .img-holder
+        margin-bottom: 40px
+        img
+          height: 142px
+
+      h4
+        text-align: center
+        color:  #526680
+        font-size: 18px
+        letter-spacing: 0.09px
+        line-height: 24px
+        font-weight: normal
+        font-family: "SegoeUI-Semibold", sans-serif
+        margin-bottom: 20px
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+
+
+
+      .text
+
+        color:  #526680
+        font-size: 16px
+        letter-spacing: 0.08px
+        line-height: 24px

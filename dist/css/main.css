@@ -25,6 +25,11 @@ body {
   margin: 0;
   line-height: 1em;
   font-size: 14px; }
+  body p {
+    color: #526680;
+    font-size: 16px;
+    letter-spacing: 0.08px;
+    line-height: 24px; }
 
 .wrap {
   width: 940px;
@@ -175,7 +180,7 @@ body {
       width: 300px;
       float: left;
       background: url("../img/bg/advantage.png") no-repeat bottom center;
-      height: 295px;
+      height: 292px;
       margin-right: 20px;
       margin-bottom: 20px;
       overflow: hidden;
@@ -346,7 +351,7 @@ header .menu_wrap {
         line-height: 30px;
         letter-spacing: 0.12px;
         font-weight: normal;
-          font-weight-overflow: hidden; }
+        overflow: hidden; }
         .mod_popular_article .item-popular .item-article h4 a:hover {
           text-decoration: none;
           -webkit-transition: all .3s;
@@ -401,6 +406,15 @@ header .menu_wrap {
   width: 100%;
   z-index: 5; }
 
+.page_wrapper.about header .menu_wrap {
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5; }
+
 footer {
   background: url("../img/bg/bg_footer.jpg") no-repeat center;
   background-size: 100%;
@@ -445,7 +459,6 @@ footer {
         margin-right: 30px; }
         footer .wrap .mod_info_footer > div li a {
           display: block;
-          width: 12px;
           overflow: hidden;
           font-size: 20px; }
           footer .wrap .mod_info_footer > div li a:hover {
@@ -454,11 +467,146 @@ footer {
             font: normal normal normal 14px/1 FontAwesome;
             font-size: inherit;
             text-rendering: auto; }
-        footer .wrap .mod_info_footer > div li.twitter a i:after {
+        footer .wrap .mod_info_footer > div li.twitter a i:before {
+          content: "\f173"; }
+        footer .wrap .mod_info_footer > div li.facebook a i:before {
           content: "\f09a"; }
-        footer .wrap .mod_info_footer > div li.facebook a i:after {
-          content: "\f09a"; }
-        footer .wrap .mod_info_footer > div li.linkedin a i:after {
+        footer .wrap .mod_info_footer > div li.linkedin a i:before {
           content: "\f0e1"; }
         footer .wrap .mod_info_footer > div li:last-child {
           margin-right: 0; }
+
+.image-about {
+  background: url("../img/bg/bg_about.jpg") no-repeat;
+  background-size: cover;
+  height: 395px;
+  position: relative; }
+  .image-about .content-image {
+    background: rgba(37, 61, 92, 0.65);
+    width: 800px;
+    padding: 30px 20px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -400px; }
+    .image-about .content-image p {
+      color: #ffffff;
+      font-size: 22px;
+      font-style: italic;
+      letter-spacing: 0.11px;
+      line-height: 2em; }
+    .image-about .content-image span {
+      float: right;
+      font-family: "SegoeUI-Semibold", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      font-style: italic;
+      letter-spacing: 0.08px;
+      line-height: 16px; }
+
+.mod_advantage2 {
+  margin-bottom: 50px; }
+  .mod_advantage2 h3 {
+    text-align: center;
+    line-height: 1em;
+    font-weight: normal;
+    font-family: "SegoeUI-Semibold", sans-serif;
+    color: #253d5c;
+    font-size: 36px;
+    margin-bottom: 75px; }
+  .mod_advantage2 .advantages ul li {
+    width: 300px;
+    float: left;
+    background: url("../img/bg/bg_advantage2.png") no-repeat bottom center;
+    height: 292px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 0 10px;
+    box-sizing: border-box; }
+    .mod_advantage2 .advantages ul li:nth-child(3n) {
+      margin-right: 0; }
+    .mod_advantage2 .advantages ul li .img-holder {
+      width: 91px;
+      height: 91px;
+      margin: auto;
+      margin-bottom: 20px; }
+    .mod_advantage2 .advantages ul li h4 {
+      margin-bottom: 20px;
+      line-height: 1em;
+      text-align: center;
+      color: #253d5c;
+      font-size: 18px;
+      font-family: "SegoeUI-Semibold", sans-serif;
+      letter-spacing: 0.09px; }
+    .mod_advantage2 .advantages ul li p {
+      text-align: center;
+      color: #253d5c;
+      font-size: 16px;
+      letter-spacing: 0.08px;
+      line-height: 24px; }
+
+.mod_about {
+  margin-top: 70px;
+  margin-bottom: 115px; }
+  .mod_about h3 {
+    text-align: center;
+    line-height: 1em;
+    font-weight: normal;
+    font-family: "SegoeUI-Semibold", sans-serif;
+    color: #253d5c;
+    font-size: 36px;
+    margin-bottom: 75px;
+    letter-spacing: 0.18px; }
+  .mod_about .img-holder {
+    float: left;
+    margin-right: 60px; }
+    .mod_about .img-holder img {
+      width: 480px; }
+  .mod_about .text {
+    overflow: hidden;
+    color: #526680;
+    font-size: 16px;
+    letter-spacing: 0.08px;
+    line-height: 24px; }
+
+.mod_our_plus {
+  margin-bottom: 100px; }
+  .mod_our_plus h3 {
+    text-align: center;
+    line-height: 1em;
+    font-weight: normal;
+    font-family: "SegoeUI-Semibold", sans-serif;
+    color: #253d5c;
+    font-size: 36px;
+    margin-bottom: 100px;
+    letter-spacing: 0.18px; }
+  .mod_our_plus .items .item-plus {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-right: 15px; }
+    .mod_our_plus .items .item-plus:last-child {
+      margin-right: 0; }
+    .mod_our_plus .items .item-plus .img-holder {
+      margin-bottom: 40px; }
+      .mod_our_plus .items .item-plus .img-holder img {
+        height: 142px; }
+    .mod_our_plus .items .item-plus h4 {
+      text-align: center;
+      color: #526680;
+      font-size: 18px;
+      letter-spacing: 0.09px;
+      line-height: 24px;
+      font-weight: normal;
+      font-family: "SegoeUI-Semibold", sans-serif;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .mod_our_plus .items .item-plus .text {
+      color: #526680;
+      font-size: 16px;
+      letter-spacing: 0.08px;
+      line-height: 24px; }
