@@ -701,7 +701,7 @@ form {
 
 .blog-items {
   margin-top: 70px;
-  margin-bottom: 100px; }
+  margin-bottom: 70px; }
   .blog-items .item-article {
     margin-bottom: 60px;
     padding-bottom: 60px;
@@ -813,7 +813,7 @@ form {
         width: 100%; }
     .services-items .item-service .text {
       overflow: hidden; }
-      .services-items .item-service .text h3 a {
+      .services-items .item-service .text h3 {
         font-weight: normal;
         font-family: "SegoeUI-Semibold", sans-serif;
         display: block;
@@ -828,11 +828,11 @@ form {
         -webkit-transition: all .3s;
         transition: all .3s;
         margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 3px solid #cdd6ea;
+        border-bottom: 3px solid #e11424;
         padding-left: 60px;
-        position: relative; }
-        .services-items .item-service .text h3 a:after {
+        position: relative;
+        box-sizing: border-box; }
+        .services-items .item-service .text h3:after {
           position: absolute;
           width: 46px;
           height: 40px;
@@ -841,23 +841,78 @@ form {
           top: 0;
           content: "";
           z-index: 0; }
-        .services-items .item-service .text h3 a:before {
+        .services-items .item-service .text h3:before {
           position: absolute;
-          width: 30px;
-          height: 30px;
-          background: url("../img/icons/edit.png") no-repeat;
-          left: 8px;
-          top: 5px;
+          width: 34px;
+          height: 34px;
+          background: url("../img/icons/marketing.png") no-repeat;
+          left: 6px;
+          top: 3px;
           content: "";
           z-index: 1;
           background-size: 100%; }
-        .services-items .item-service .text h3 a:hover {
-          text-decoration: none;
-          color: #e11424;
-          -webkit-transition: all .3s;
-          transition: all .3s; }
       .services-items .item-service .text div {
         color: #526680;
         font-size: 16px;
         letter-spacing: 0.08px;
         line-height: 24px; }
+        .services-items .item-service .text div p {
+          margin-bottom: 30px; }
+        .services-items .item-service .text div .service_link {
+          display: block;
+          color: #e11424;
+          font-size: 20px;
+          letter-spacing: 0.1px;
+          line-height: 24px;
+          font-family: "SegoeUI-Semibold", sans-serif;
+          position: relative; }
+          .services-items .item-service .text div .service_link:hover {
+            text-decoration: none; }
+          .services-items .item-service .text div .service_link:after {
+            content: "";
+            background: url("../img/icons/readmore2.png") no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            width: 7px;
+            height: 12px;
+            margin-left: 7px; }
+    .services-items .item-service#marketing .text h3:before {
+      background: url("../img/icons/marketing.png") no-repeat;
+      background-size: 100%; }
+    .services-items .item-service#business_plan .text h3:before {
+      background: url("../img/icons/business_plan.png") no-repeat;
+      background-size: 100%; }
+    .services-items .item-service#web .text h3:before {
+      background: url("../img/icons/web.png") no-repeat;
+      background-size: 100%; }
+    .services-items .item-service#design .text h3:before {
+      background: url("../img/icons/design.png") no-repeat;
+      background-size: 100%; }
+
+.pagination {
+  text-align: center;
+  margin-bottom: 100px;
+  clear: both; }
+  .pagination li {
+    width: 18px;
+    height: 36px;
+    display: inline-block;
+    vertical-align: top; }
+    .pagination li.disabled a {
+      opacity: 0.3; }
+      .pagination li.disabled a:hover {
+        opacity: 0.3; }
+    .pagination li.prev {
+      margin-right: 100px; }
+      .pagination li.prev a {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+    .pagination li a {
+      display: block;
+      height: 30px;
+      background: url("../img/icons/pagination.png") no-repeat;
+      background-size: contain;
+      opacity: 0.8; }
+      .pagination li a:hover {
+        opacity: 1; }

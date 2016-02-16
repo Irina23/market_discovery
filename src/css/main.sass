@@ -881,7 +881,7 @@ form
 
 .blog-items
   margin-top: 70px
-  margin-bottom: 100px
+  margin-bottom: 70px
   .item-article
     margin-bottom: 60px
     padding-bottom: 60px
@@ -1010,7 +1010,7 @@ form
     .text
       overflow: hidden
       h3
-        a
+
           font-weight: normal
           font-family: "SegoeUI-Semibold", sans-serif
           display: block
@@ -1024,11 +1024,10 @@ form
           height: 40px
           transition: all .3s
           margin-bottom: 20px
-          padding-bottom: 20px
-          //box-sizing:  border-box
-          border-bottom: 3px solid #cdd6ea
+          border-bottom: 3px solid $color-red
           padding-left: 60px
           position: relative
+          box-sizing: border-box
           &:after
             position: absolute
             width: 46px
@@ -1040,19 +1039,16 @@ form
             z-index: 0
           &:before
             position: absolute
-            width: 30px
-            height: 30px
-            background: url("../img/icons/edit.png") no-repeat
-            left: 8px
-            top: 5px
+            width: 34px
+            height: 34px
+            background: url("../img/icons/marketing.png") no-repeat
+            left: 6px
+            top: 3px
             content: ""
             z-index: 1
             background-size: 100%
 
-          &:hover
-            text-decoration: none
-            color: $color-red
-            transition: all .3s
+
 
 
       div
@@ -1061,6 +1057,98 @@ form
         font-size: 16px
         letter-spacing: 0.08px
         line-height: 24px
+        p
+          margin-bottom: 30px
+
+        .service_link
+          display: block
+          color: $color-red
+          font-size: 20px
+          letter-spacing: 0.1px
+          line-height: 24px
+          font-family: "SegoeUI-Semibold", sans-serif
+          position: relative
+          
+          &:hover
+            text-decoration: none
+
+          &:after 
+            content: ""
+            background: url("../img/icons/readmore2.png") no-repeat
+            background-size: 100%
+            display: inline-block
+            vertical-align: middle
+            width: 7px
+            height: 12px
+            margin-left: 7px
+
+            
 
 
+    &#marketing
+      .text
+
+        h3
+          &:before
+            background: url("../img/icons/marketing.png") no-repeat
+            background-size: 100%
+
+    &#business_plan
+      .text
+
+        h3
+          &:before
+            background: url("../img/icons/business_plan.png") no-repeat
+            background-size: 100%
+
+    &#web
+      .text
+
+        h3
+          &:before
+            background: url("../img/icons/web.png") no-repeat
+            background-size: 100%
+
+    &#design
+      .text
+
+        h3
+          &:before
+            background: url("../img/icons/design.png") no-repeat
+            background-size: 100%
+
+
+.pagination
+  text-align: center
+  margin-bottom: 100px
+  clear: both
+
+  li
+    width: 18px
+    height: 36px
+    display: inline-block
+    vertical-align: top
+    &.disabled
+      a
+        opacity: 0.3
+        &:hover
+          opacity: 0.3
+
+
+    &.prev
+      margin-right: 100px
+      a
+        transform: rotate(180deg)
+
+    a
+      display: block
+      height: 30px
+      background: url("../img/icons/pagination.png") no-repeat
+      background-size: contain
+      opacity: 0.8
+
+
+      &:hover
+
+        opacity: 1
 
