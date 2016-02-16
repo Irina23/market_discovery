@@ -24,7 +24,19 @@ $color-red: #e11424
   font-weight: normal
 
 
+.fa-lg
+  font-size: (4em / 3)
+  line-height: (3em / 4)
+  vertical-align: -15%
 
+.fa-2x
+  font-size: 2em
+.fa-3x
+  font-size: 3em
+.fa-4x
+  font-size: 4em
+.fa-5x
+  font-size: 5em
 
 body
   font-family: "SegoeUI", sans-serif
@@ -792,8 +804,7 @@ footer
 
 
 form
-  width: 620px
-  float: right
+
   .row-form
     margin-bottom: 20px
     >div
@@ -827,8 +838,7 @@ form
     letter-spacing: 0.09px
 
 
-    &#url
-      width: 620px
+
 
 
 
@@ -860,7 +870,7 @@ form
   button
     border: 2px solid #fff
     width: 176px
-
+    transition: all .3s
     font-family: "SegoeUI-Semibold", sans-serif
     color:  #ffffff
     font-size: 20px
@@ -876,6 +886,15 @@ form
     &:hover
       background: #fff
       color: $main-blue
+      transition: all .3s
+
+footer
+  form
+    width: 620px
+    float: right
+    input[type="text"]
+      &#url
+        width: 620px
 
 
 
@@ -991,12 +1010,13 @@ form
 
 
 .services-items
-  margin-top: 70px
+  margin-top: 10px
   margin-bottom: 100px
   .item-service
-    margin-bottom: 60px
+    padding-top: 60px
     padding-bottom: 60px
     border-bottom: 3px solid #d4dce7
+    position: relative
     &:last-child
       border: 0
       padding-bottom: 0
@@ -1068,6 +1088,7 @@ form
           line-height: 24px
           font-family: "SegoeUI-Semibold", sans-serif
           position: relative
+          cursor: pointer
           
           &:hover
             text-decoration: none
@@ -1152,3 +1173,69 @@ form
 
         opacity: 1
 
+
+
+#services_form
+  display: none
+  width: 670px
+  //height: 470px
+  background: #ffffff
+  box-sizing: border-box
+  border: 1px solid #d8dff0
+  padding: 50px 23px 35px 23px
+  position: absolute
+  z-index: 10
+  top: 0
+  right: 0
+
+
+
+  input[type="text"],textarea,
+  button,input[type="email"]
+    border-color: #d0d7e4
+    color: #858da5
+  input,textarea
+    &::-webkit-input-placeholder
+      color: #858da5
+    &::-moz-placeholder
+      color: #858da5
+    &:-moz-placeholder
+      color: #858da5
+    &:-ms-input-placeholder
+      color: #858da5
+
+
+  input
+    &#url
+      width: 620px
+
+
+  span.error
+    color: $color-red
+
+
+  button
+    border-color: $main-blue
+    color: $main-blue
+
+    &:hover
+      background: $main-blue
+      color: #fff
+
+
+  .close
+    position: absolute
+    top: 10px
+    right: 23px
+    cursor: pointer
+
+
+
+  .row-form
+    >div
+
+      &.error
+        span.error
+          display: block
+        input,textarea
+          border-color: $color-red

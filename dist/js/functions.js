@@ -88,7 +88,7 @@ jQuery(document).ready(function() {
 
 
 
-    jQuery(".contact_footer").validate({
+    jQuery(".contact_footer,#services_form").validate({
 
         rules:{
 
@@ -115,6 +115,13 @@ jQuery(document).ready(function() {
 
 
 
+    });
+
+    jQuery(" .service_link").on("click", function(){
+        jQuery(this).next().slideToggle(600);
+    });
+    jQuery( "form .close" ).click(function(){
+        jQuery(this).closest("form").slideToggle(600);
     });
 
 });
