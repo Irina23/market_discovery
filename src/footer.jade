@@ -31,4 +31,35 @@ footer
                         a(href="#")
                             i(class="fa fa-linkedin")
             .copyright Copyright 2016 Market Discovery
+
+
+
+        form.contact_footer
+            .row-form.cf
+                div
+                    input(type="text", placeholder="ФИО:", name="name", minlength="2", data-validate="name")
+                    span.error Поле обязательное для заполнения
+                div
+                    input(type="email", placeholder="E-mail:", name="email", minlength="2", data-validate="name")
+                    span.error Поле обязательное для заполнения
+            .row-form.cf
+                div
+                    input(type="text", placeholder="Skype:", name="skype")
+
+                div
+                    input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+                    span.error Поле обязательное для заполнения
+            .row-form.url.cf
+                div
+                    input(type="text", placeholder="Название сайта: www.marketdiscovery.com:", name="url", id="url")
+
+
+            .row-form.cf
+                div
+                    textarea( placeholder="Сообщение:", name="message", data-validate="name")
+                    span.error Поле обязательное для заполнения
+
+            button(type="submit")  Отправить
+
+
 #cache

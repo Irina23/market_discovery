@@ -769,3 +769,90 @@ footer
         font-size: 16px
         letter-spacing: 0.08px
         line-height: 24px
+
+
+form
+  width: 620px
+  float: right
+  .row-form
+    margin-bottom: 20px
+    >div
+      float: left
+      &:nth-child(2n+1)
+        margin-right: 20px
+      &.error
+        span.error
+          display: block
+        input,textarea
+          border-color: $color-red
+
+  span.error
+      display: none
+      color: #fff
+      font-size: 16px
+      margin-top: 5px
+
+
+
+  input[type="text"],input[type="email"]
+    background: none
+    width: 300px
+    height: 50px
+    box-sizing: border-box
+    border: 2px solid #fff
+    padding: 0 15px
+    line-height: 50px
+    color: #fff
+    font-size: 18px
+    letter-spacing: 0.09px
+
+
+    &#url
+      width: 620px
+
+
+
+
+  textarea
+    background: none
+    width: 620px
+    height: 90px
+    box-sizing: border-box
+    border: 2px solid #fff
+    padding: 15px
+    line-height: 1em
+    color: #fff
+    font-size: 18px
+    letter-spacing: 0.09px
+
+
+  input,textarea
+    &::-webkit-input-placeholder
+      color: #fff
+    &::-moz-placeholder
+      color: #fff
+    &:-moz-placeholder
+      color: #fff
+    &:-ms-input-placeholder
+      color: #fff
+
+
+  button
+    border: 2px solid #fff
+    width: 176px
+
+    font-family: "SegoeUI-Semibold", sans-serif
+    color:  #ffffff
+    font-size: 20px
+    letter-spacing: 0.1px
+    line-height: 1em
+    text-align: center
+    background: none
+    box-sizing: border-box
+    vertical-align: middle
+    padding: 9px 0 14px
+    margin: auto
+    display: block
+    &:hover
+      background: #fff
+      color: $main-blue

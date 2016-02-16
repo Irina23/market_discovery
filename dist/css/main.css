@@ -610,3 +610,72 @@ footer {
       font-size: 16px;
       letter-spacing: 0.08px;
       line-height: 24px; }
+
+form {
+  width: 620px;
+  float: right; }
+  form .row-form {
+    margin-bottom: 20px; }
+    form .row-form > div {
+      float: left; }
+      form .row-form > div:nth-child(2n+1) {
+        margin-right: 20px; }
+      form .row-form > div.error span.error {
+        display: block; }
+      form .row-form > div.error input, form .row-form > div.error textarea {
+        border-color: #e11424; }
+  form span.error {
+    display: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px; }
+  form input[type="text"], form input[type="email"] {
+    background: none;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    padding: 0 15px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.09px; }
+    form input[type="text"]#url, form input[type="email"]#url {
+      width: 620px; }
+  form textarea {
+    background: none;
+    width: 620px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    padding: 15px;
+    line-height: 1em;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.09px; }
+  form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+    color: #fff; }
+  form input::-moz-placeholder, form textarea::-moz-placeholder {
+    color: #fff; }
+  form input:-moz-placeholder, form textarea:-moz-placeholder {
+    color: #fff; }
+  form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+    color: #fff; }
+  form button {
+    border: 2px solid #fff;
+    width: 176px;
+    font-family: "SegoeUI-Semibold", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    line-height: 1em;
+    text-align: center;
+    background: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 9px 0 14px;
+    margin: auto;
+    display: block; }
+    form button:hover {
+      background: #fff;
+      color: #253d5c; }

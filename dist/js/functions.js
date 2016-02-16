@@ -85,4 +85,36 @@ jQuery(document).ready(function() {
         // })
 
     });
+
+
+
+    jQuery(".contact_footer").validate({
+
+        rules:{
+
+            name:{
+                required: true,
+                minlength: 2
+
+            },
+
+
+            phone:{
+                required: true,
+                digits: true
+
+            },
+            email:{
+                required: true,
+                email: true
+            },
+            message:{
+                required: true
+            }
+        }
+
+
+
+    });
+
 });
