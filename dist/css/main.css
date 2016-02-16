@@ -765,3 +765,99 @@ form {
         font-size: 16px;
         letter-spacing: 0.08px;
         line-height: 24px; }
+
+.article {
+  margin-top: 70px;
+  margin-bottom: 100px; }
+  .article h1 {
+    text-align: center;
+    line-height: 1em;
+    font-weight: normal;
+    font-family: "SegoeUI-Semibold", sans-serif;
+    color: #253d5c;
+    font-size: 36px;
+    margin-bottom: 100px;
+    letter-spacing: 0.18px; }
+  .article h3 {
+    color: #526680;
+    font-size: 20px;
+    letter-spacing: 0.08px;
+    line-height: 1em;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-family: "SegoeUI-Semibold", sans-serif; }
+  .article p {
+    margin-bottom: 40px;
+    overflow: hidden; }
+  .article a {
+    color: #526680;
+    font-size: 16px;
+    letter-spacing: 0.08px;
+    line-height: 24px; }
+
+.services-items {
+  margin-top: 70px;
+  margin-bottom: 100px; }
+  .services-items .item-service {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 3px solid #d4dce7; }
+    .services-items .item-service:last-child {
+      border: 0;
+      padding-bottom: 0; }
+    .services-items .item-service .img-holder {
+      width: 400px;
+      float: left;
+      margin-right: 60px; }
+      .services-items .item-service .img-holder img {
+        width: 100%; }
+    .services-items .item-service .text {
+      overflow: hidden; }
+      .services-items .item-service .text h3 a {
+        font-weight: normal;
+        font-family: "SegoeUI-Semibold", sans-serif;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #253d5c;
+        font-size: 20px;
+        letter-spacing: 0.1px;
+        line-height: 34px;
+        height: 40px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #cdd6ea;
+        padding-left: 60px;
+        position: relative; }
+        .services-items .item-service .text h3 a:after {
+          position: absolute;
+          width: 46px;
+          height: 40px;
+          background: #e11424;
+          left: 0;
+          top: 0;
+          content: "";
+          z-index: 0; }
+        .services-items .item-service .text h3 a:before {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background: url("../img/icons/edit.png") no-repeat;
+          left: 8px;
+          top: 5px;
+          content: "";
+          z-index: 1;
+          background-size: 100%; }
+        .services-items .item-service .text h3 a:hover {
+          text-decoration: none;
+          color: #e11424;
+          -webkit-transition: all .3s;
+          transition: all .3s; }
+      .services-items .item-service .text div {
+        color: #526680;
+        font-size: 16px;
+        letter-spacing: 0.08px;
+        line-height: 24px; }
