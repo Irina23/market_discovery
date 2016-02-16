@@ -124,4 +124,31 @@ jQuery(document).ready(function() {
         jQuery(this).closest("form").slideToggle(600);
     });
 
+
+
+    jQuery(window).scroll( function(){
+        if ( jQuery(window).scrollTop() > 0 ) {
+            jQuery(".home .services li:nth-child(1),.services li:nth-child(2)").addClass('animated fadeInLeft');
+            jQuery(".home .services li:nth-child(3),.services li:nth-child(4)").addClass('animated fadeInRight');
+            jQuery(".home .services li").css("display", "inline-block");
+
+
+        }
+        if ( jQuery(window).scrollTop() > 400 ) {
+            jQuery(".mod_advantage").addClass('animated fadeInUp');
+            jQuery(".mod_advantage").css("display", "block");
+        }
+        if ( jQuery(window).scrollTop() > 1000 ) {
+            jQuery(".mod_popular_article").addClass('animated zoomIn');
+            jQuery(".mod_popular_article").css("display", "block");
+        }
+    });
+
+
+
+
+
+
+
+
 });
