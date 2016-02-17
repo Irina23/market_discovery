@@ -1386,6 +1386,8 @@ footer form {
         text-align: center;
         font-size: 14px;
         width: auto; }
+      footer .wrap .mod_info_footer > div h4 {
+        margin-bottom: 7px; }
       footer .wrap .mod_info_footer > div h4, footer .wrap .mod_info_footer > div p, footer .wrap .mod_info_footer > div p a {
         font-size: 14px; } }
 
