@@ -154,7 +154,7 @@ jQuery(document).ready(function() {
 
 
             }
-            if ( jQuery(window).scrollTop() > 550 ) {
+            if ( jQuery(window).scrollTop() > 500 ) {
                 jQuery(".mod_advantage").addClass('animated fadeInUp');
                 jQuery(".mod_advantage").css("display", "block");
             }
