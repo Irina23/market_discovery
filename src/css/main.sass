@@ -215,6 +215,8 @@ body
 
 .mod_advantage
   display: none
+  &.mobile
+    display: none!important
   h3
     text-align: center
     line-height: 1em
@@ -686,6 +688,8 @@ footer
 
 .mod_advantage2
   margin-bottom: 50px
+  &.mobile
+    display: none
   h3
     text-align: center
     line-height: 1em
@@ -771,6 +775,7 @@ footer
 
 .mod_our_plus
   margin-bottom: 60px
+  text-align: center
   h3
     text-align: center
     line-height: 1em
@@ -1360,6 +1365,15 @@ footer
     line-height: 20px
 
 
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 750px)
   .wrap
     width: 100%
@@ -1482,6 +1496,16 @@ footer
 
   .image-about
     height: 350px
+    .content-image
+      width: 100%
+      margin: auto
+      left: 0
+      top: 120px
+      p
+        font-size: 16px
+      span
+        font-size: 14px
+      
 
 
   .page_wrapper.about header .menu_wrap,
@@ -1495,6 +1519,55 @@ footer
     width: 100%
     z-index: 5
 
-@media screen and (max-width: 320px)
+
+
+  .mod_our_plus
+    h3
+      font-size: 24px
+      margin-bottom: 40px
+
+
+  .mod_advantage2,.mod_advantage
+    display: none
+    &.mobile
+      display: block
+      margin: auto auto 50px
+      width: 300px
+      h3
+        font-size: 24px
+        margin-bottom: 40px
+      .advantages
+
+        ul
+          margin: auto
+
+          li
+            margin: 0 auto 20px
+
+      .owl-controls
+        .owl-pagination
+          .owl-page
+            display: inline-block
+            vertical-align: middle
+            margin: 0 15px
+            &.active, &:hover
+              span
+                background: $main-blue
+            span
+              width: 15px
+              height: 15px
+              box-sizing: border-box
+              display: block
+              border: 1px solid $main-blue
+
+
+
+
+
+
+@media screen and (max-width: 360px)
   body
     min-width: 320px
+
+  .mod_advantage2.mobile
+      margin: auto 0 50px -10px

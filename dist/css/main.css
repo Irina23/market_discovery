@@ -180,6 +180,8 @@ body {
 
 .mod_advantage {
   display: none; }
+  .mod_advantage.mobile {
+    display: none !important; }
   .mod_advantage h3 {
     text-align: center;
     line-height: 1em;
@@ -550,6 +552,8 @@ footer {
 
 .mod_advantage2 {
   margin-bottom: 50px; }
+  .mod_advantage2.mobile {
+    display: none; }
   .mod_advantage2 h3 {
     text-align: center;
     line-height: 1em;
@@ -618,7 +622,8 @@ footer {
     line-height: 24px; }
 
 .mod_our_plus {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  text-align: center; }
   .mod_our_plus h3 {
     text-align: center;
     line-height: 1em;
@@ -1164,6 +1169,15 @@ footer form {
       text-align: center; }
   .image-about {
     height: 350px; }
+    .image-about .content-image {
+      width: 100%;
+      margin: auto;
+      left: 0;
+      top: 120px; }
+      .image-about .content-image p {
+        font-size: 16px; }
+      .image-about .content-image span {
+        font-size: 14px; }
   .page_wrapper.about header .menu_wrap,
   .page_wrapper.home header .menu_wrap,
   header .menu_wrap {
@@ -1173,8 +1187,38 @@ footer form {
     top: inherit;
     left: inherit;
     width: 100%;
-    z-index: 5; } }
+    z-index: 5; }
+  .mod_our_plus h3 {
+    font-size: 24px;
+    margin-bottom: 40px; }
+  .mod_advantage2, .mod_advantage {
+    display: none; }
+    .mod_advantage2.mobile, .mod_advantage.mobile {
+      display: block;
+      margin: auto auto 50px;
+      width: 300px; }
+      .mod_advantage2.mobile h3, .mod_advantage.mobile h3 {
+        font-size: 24px;
+        margin-bottom: 40px; }
+      .mod_advantage2.mobile .advantages ul, .mod_advantage.mobile .advantages ul {
+        margin: auto; }
+        .mod_advantage2.mobile .advantages ul li, .mod_advantage.mobile .advantages ul li {
+          margin: 0 auto 20px; }
+      .mod_advantage2.mobile .owl-controls .owl-pagination .owl-page, .mod_advantage.mobile .owl-controls .owl-pagination .owl-page {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 15px; }
+        .mod_advantage2.mobile .owl-controls .owl-pagination .owl-page.active span, .mod_advantage2.mobile .owl-controls .owl-pagination .owl-page:hover span, .mod_advantage.mobile .owl-controls .owl-pagination .owl-page.active span, .mod_advantage.mobile .owl-controls .owl-pagination .owl-page:hover span {
+          background: #253d5c; }
+        .mod_advantage2.mobile .owl-controls .owl-pagination .owl-page span, .mod_advantage.mobile .owl-controls .owl-pagination .owl-page span {
+          width: 15px;
+          height: 15px;
+          box-sizing: border-box;
+          display: block;
+          border: 1px solid #253d5c; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   body {
-    min-width: 320px; } }
+    min-width: 320px; }
+  .mod_advantage2.mobile {
+    margin: auto 0 50px -10px; } }

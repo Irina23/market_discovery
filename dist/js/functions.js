@@ -148,7 +148,35 @@ jQuery(document).ready(function() {
 
 
 
+    jQuery(document).ready(function() {
 
 
 
+    });
+
+
+
+    jQuery(window).resize(function() {
+        if (jQuery(window).width() <= 750) {
+            jQuery(".mod_advantage2.mobile ul, .mod_advantage.mobile ul").owlCarousel({
+                pagination : true,
+                //autoPlay: 3000, //Set AutoPlay to 3 seconds
+                singleItem:true
+
+
+
+            });
+        }
+    });
+
+    if (jQuery(window).width() <= 750) {
+        jQuery(".mod_advantage2.mobile ul, .mod_advantage.mobile ul").owlCarousel({
+            pagination : true,
+            ///autoPlay: 3000, //Set AutoPlay to 3 seconds
+            singleItem:true
+
+
+
+        });
+    }
 });
