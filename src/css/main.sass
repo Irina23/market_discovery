@@ -290,6 +290,7 @@ body
       width: 940px
       margin: auto
       padding-top: 180px
+      text-align: center
       h3
         font-family: "SegoeUI-Semibold", sans-serif
         color: $main-blue
@@ -312,10 +313,10 @@ body
         margin-bottom: 15px
       a
         background:  $color-red
-        width: 205px
+        //width: 205px
         //height: 55px
         margin: auto
-        display: block
+        display: inline-block
         text-align: center
         line-height: 1em
         font-family: "SegoeUI-Semibold", sans-serif
@@ -323,7 +324,7 @@ body
         text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
         letter-spacing: 0.12px
         font-size: 24px
-        padding: 13px 0 20px
+        padding: 13px 20px 20px
         transition: all .3s
 
 
@@ -372,6 +373,59 @@ header
     .menu
       display: inline-block
       vertical-align: middle
+      position: relative
+      #menu-icon
+        display: none
+        width: 20px
+        height: 17px
+        background: url("../img/icons/menu.png") no-repeat
+        cursor: pointer
+        float: right
+        &:hover
+          background-position: bottom left
+        &.active
+          margin-bottom: 10px
+          background: url("../img/icons/close.png") no-repeat
+          background-size: 100%
+          height: 20px
+          &:hover
+            background-position: bottom left
+
+
+
+
+      &.active
+        float: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        background: #fff
+        margin: 0
+        padding: 20px 20px 100px
+        box-sizing: border-box
+
+        ul
+          clear: both
+        li
+          display: block
+          text-align: center
+          margin: 0 auto 25px
+          a
+            //display: block
+            line-height: 1em
+            padding-bottom: 7px
+            //border-width: 1px
+            height: auto
+            display: inline-block
+
+          &.active
+            a
+              &:after
+                height: 1px
+
+
+
 
       ul
         li
@@ -434,7 +488,7 @@ header
     .item-article
       width: 300px
       display: inline-block
-      margin: 0 7px 40px
+      margin: 0 6px 40px
       .img-holder
         height: 240px
         margin-bottom: 35px
@@ -483,6 +537,7 @@ header
         letter-spacing: 0.08px
         line-height: 24px
         height: 72px
+        text-align: left
 
       a.readmore
         font-family: "SegoeUI", sans-serif
@@ -492,6 +547,7 @@ header
         line-height: 24px
         display: block
         position: relative
+        text-align: left
         &:after
           content: ""
           background: url("../img/icons/readmore.png") no-repeat
@@ -1281,10 +1337,14 @@ footer
     width: 720px
 
 
-  .services ul
-    margin: auto
-    li
-      padding: 0 5px
+  .services
+    padding-bottom: 65px
+    ul
+      margin: auto
+      li
+        padding: 0 5px
+        margin-bottom: 35px
+        width: 48%
 
 
   .mod_advantage
@@ -1560,6 +1620,161 @@ footer
               display: block
               border: 1px solid $main-blue
 
+
+
+  .services
+    padding: 40px 0 15px
+    h3
+      font-size: 24px
+      margin-bottom: 40px
+    ul
+      li
+        display: block!important
+        width: 100%
+        margin:  0 auto 35px
+        .img-holder
+          margin-bottom: 15px
+          height: 60px
+          img
+            height: 100%
+        h4
+
+          height: auto
+
+
+
+  .slider
+    height: 180px
+    .item
+      height: 180px
+      .content-slider
+        width: 290px
+        padding-top: 30px
+        h3
+          font-size: 20px
+          padding: 10px 5px
+          margin-bottom: 5px
+        p
+          font-size: 18px
+          padding: 10px 5px
+          margin-bottom: 10px
+        a
+
+          font-size: 16px
+          padding: 5px 10px 9px
+
+
+    #bar
+      height: 4px
+
+
+  .mod_popular_article
+    width: 100%
+    padding: 40px 20px 10px
+    box-sizing: border-box
+    display: block!important
+    animation-name: inherit!important
+    animation-duration: inherit!important
+
+    h3
+      margin-bottom: 40px
+      font-size: 24px
+
+
+  .mod_advantage,
+  .services ul li
+    animation-name: inherit!important
+    animation-duration: inherit!important
+
+  .mod_advantage
+    display: none!important
+    &.mobile
+      display: block!important
+      margin: auto
+      width: 100%
+      .advantages
+        background: none
+        ul
+          width: 100%
+          margin: auto
+          padding: 0
+          .owl-wrapper-outer
+            background: url("../img/bg/bg_advantage.jpg") no-repeat center
+            background-size: cover
+            padding-top: 20px
+            margin-bottom: 15px
+
+
+
+
+  header
+    .menu_wrap
+      //padding: 10px 0
+      .wrap
+        padding: 0
+      .logo
+        height: 40px
+        position: relative
+        z-index: 2
+        margin: 10px 0 10px 20px
+      .menu
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        padding: 20px 20px 0
+        background: #fff
+        box-sizing: border-box
+        z-index: 1
+        &.active
+          z-index: 10
+        ul li
+          display: block
+          text-align: center
+          margin: 0 auto 25px
+          a
+            //display: block
+            line-height: 1em
+            padding-bottom: 7px
+            //border-width: 1px
+            height: auto
+            display: inline-block
+
+          &.active
+            a
+              &:after
+                height: 1px
+
+        #menu-icon
+          display: block
+          float: right
+          margin-bottom: 10px
+
+        ul
+          display: none
+  header .menu_wrap:after
+    height: 0
+  .blog-items,.article
+    margin-top: 0
+
+  footer
+    .wrap
+      .mod_info_footer
+        width: auto
+        > div
+            display: inline-block
+            width: 49%
+            vertical-align: top
+            margin-bottom: 20px
+            overflow: hidden
+            text-overflow: ellipsis
+            &.copyright
+              display: block
+              text-align: center
+              font-size: 14px
+              width: auto
+            h4,p, p a
+              font-size: 14px
 
 
 

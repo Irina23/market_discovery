@@ -125,23 +125,19 @@ jQuery(document).ready(function() {
     });
 
 
+    jQuery(".navbar-toggle").on("click", function(){
+        jQuery(".mobile-navbar-holder").slideToggle();
+        jQuery(this).toggleClass("active");
+        jQuery(".mobile-navbar").toggleClass("active")
+    });
 
-    jQuery(window).scroll( function(){
-        if ( jQuery(window).scrollTop() > 0 ) {
-            jQuery(".home .services li:nth-child(1),.services li:nth-child(2)").addClass('animated fadeInLeft');
-            jQuery(".home .services li:nth-child(3),.services li:nth-child(4)").addClass('animated fadeInRight');
-            jQuery(".home .services li").css("display", "inline-block");
+    jQuery('.menu_wrap .menu').prepend('<div id="menu-icon"></div>');
 
+    jQuery("#menu-icon").on("click", function(){
+        jQuery(this).next().slideToggle();
+        jQuery(this).toggleClass("active");
+        jQuery(".menu_wrap .menu").toggleClass("active");
 
-        }
-        if ( jQuery(window).scrollTop() > 400 ) {
-            jQuery(".mod_advantage").addClass('animated fadeInUp');
-            jQuery(".mod_advantage").css("display", "block");
-        }
-        if ( jQuery(window).scrollTop() > 1000 ) {
-            jQuery(".mod_popular_article").addClass('animated zoomIn');
-            jQuery(".mod_popular_article").css("display", "block");
-        }
     });
 
 
@@ -150,7 +146,23 @@ jQuery(document).ready(function() {
 
     jQuery(document).ready(function() {
 
+        jQuery(window).scroll( function(){
+            if ( jQuery(window).scrollTop() > 0 ) {
+                jQuery(".home .services li:nth-child(1),.services li:nth-child(2)").addClass('animated fadeInLeft');
+                jQuery(".home .services li:nth-child(3),.services li:nth-child(4)").addClass('animated fadeInRight');
+                jQuery(".home .services li").css("display", "inline-block");
 
+
+            }
+            if ( jQuery(window).scrollTop() > 550 ) {
+                jQuery(".mod_advantage").addClass('animated fadeInUp');
+                jQuery(".mod_advantage").css("display", "block");
+            }
+            if ( jQuery(window).scrollTop() > 1000 ) {
+                jQuery(".mod_popular_article").addClass('animated zoomIn');
+                jQuery(".mod_popular_article").css("display", "block");
+            }
+        });
 
     });
 
@@ -167,6 +179,7 @@ jQuery(document).ready(function() {
 
             });
         }
+
     });
 
     if (jQuery(window).width() <= 750) {
