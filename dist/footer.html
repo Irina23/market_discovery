@@ -1,6 +1,35 @@
 
 <footer>
-  <div class="wrap">
+  <div class="wrap cf">
+    <form class="contact_footer">
+      <div class="row-form cf">
+        <div>
+          <input type="text" placeholder="ФИО:" name="name" minlength="2" data-validate="name"/><span class="error">Поле обязательное для заполнения</span>
+        </div>
+        <div>
+          <input type="email" placeholder="E-mail:" name="email" minlength="2" data-validate="name"/><span class="error">Поле обязательное для заполнения</span>
+        </div>
+      </div>
+      <div class="row-form cf">
+        <div>
+          <input type="text" placeholder="Skype:" name="skype"/>
+        </div>
+        <div>
+          <input type="text" placeholder="Телефон:" name="phone" data-validate="phone"/><span class="error">Поле обязательное для заполнения</span>
+        </div>
+      </div>
+      <div class="row-form url cf">
+        <div>
+          <input type="text" placeholder="Название сайта: marketdiscovery.com" name="url" id="url"/>
+        </div>
+      </div>
+      <div class="row-form cf">
+        <div>
+          <textarea placeholder="Сообщение:" name="message" data-validate="name"></textarea><span class="error">Поле обязательное для заполнения</span>
+        </div>
+      </div>
+      <button type="submit"> Отправить</button>
+    </form>
     <div class="mod_info_footer">
       <div class="adress">
         <h4>Адрес:</h4>
@@ -24,35 +53,6 @@
       </div>
       <div class="copyright">Copyright 2016 Market Discovery</div>
     </div>
-    <form class="contact_footer">
-      <div class="row-form cf">
-        <div>
-          <input type="text" placeholder="ФИО:" name="name" minlength="2" data-validate="name"/><span class="error">Поле обязательное для заполнения</span>
-        </div>
-        <div>
-          <input type="email" placeholder="E-mail:" name="email" minlength="2" data-validate="name"/><span class="error">Поле обязательное для заполнения</span>
-        </div>
-      </div>
-      <div class="row-form cf">
-        <div>
-          <input type="text" placeholder="Skype:" name="skype"/>
-        </div>
-        <div>
-          <input type="text" placeholder="Телефон:" name="phone" data-validate="phone"/><span class="error">Поле обязательное для заполнения</span>
-        </div>
-      </div>
-      <div class="row-form url cf">
-        <div>
-          <input type="text" placeholder="Название сайта: www.marketdiscovery.com:" name="url" id="url"/>
-        </div>
-      </div>
-      <div class="row-form cf">
-        <div>
-          <textarea placeholder="Сообщение:" name="message" data-validate="name"></textarea><span class="error">Поле обязательное для заполнения</span>
-        </div>
-      </div>
-      <button type="submit"> Отправить</button>
-    </form>
   </div>
 </footer>
 <div id="cache"></div>

@@ -99,7 +99,7 @@ body
 
     .phone
       a
-        margin-bottom: 7px
+        margin-bottom: 5px
         &:last-child
           margin-bottom: 0
     .email
@@ -157,8 +157,9 @@ body
 
   ul
     margin: 0 -10px
+    overflow: hidden
     li
-      display: inline-block
+      //display: inline-block
       vertical-align: top
       padding: 0 10px
       width: 24%
@@ -225,20 +226,23 @@ body
 
   .advantages
     background: url("../img/bg/bg_advantage.jpg") no-repeat center
-    background-size: 100%
+    background-size: cover
 
     ul
       width: 940px
-      margin: auto
+      margin: -10px auto
       padding: 25px 0 15px
       //display: none
+      text-align: center
+
       li
         width: 300px
-        float: left
+        display: inline-block
+        vertical-align: top
         background: url("../img/bg/advantage.png") no-repeat bottom center
         height: 292px
-        margin-right: 20px
-        margin-bottom: 20px
+        margin: 0 6px 20px
+        //margin-bottom: 20px
         overflow: hidden
         padding: 0 10px
         box-sizing: border-box
@@ -359,6 +363,8 @@ header
       vertical-align: middle
       height: 77px
       margin-right: 60px
+      img
+        height: 100%
 
 
     .menu
@@ -409,8 +415,9 @@ header
   display: none
 
   width: 940px
-  margin: auto
-  padding: 100px 0
+  margin: -10px auto
+  padding: 100px 0 60px
+  text-align: center
   h3
     text-align: center
     line-height: 1em
@@ -425,7 +432,7 @@ header
     .item-article
       width: 300px
       display: inline-block
-      margin-right: 15px
+      margin: 0 7px 40px
       .img-holder
         height: 240px
         margin-bottom: 35px
@@ -536,7 +543,7 @@ header
 
 footer
   background: url("../img/bg/bg_footer.jpg") no-repeat center
-  background-size: 100%
+  background-size: cover
   padding: 50px 0 30px
   background-position: 50% 100%
   .wrap
@@ -691,15 +698,17 @@ footer
   .advantages
 
     ul
-
+      margin: -10px auto
+      text-align: center
 
       li
         width: 300px
-        float: left
+        display: inline-block
+        vertical-align: top
         background: url("../img/bg/bg_advantage2.png") no-repeat bottom center
         height: 292px
-        margin-right: 20px
-        margin-bottom: 20px
+        margin: 0 6px 20px
+        //margin-bottom: 20px
         overflow: hidden
         padding: 0 10px
         box-sizing: border-box
@@ -761,7 +770,7 @@ footer
 
 
 .mod_our_plus
-  margin-bottom: 100px
+  margin-bottom: 60px
   h3
     text-align: center
     line-height: 1em
@@ -774,13 +783,16 @@ footer
 
 
   .items
+    margin: 0 -7px
+    //text-align: center
     .item-plus
       display: inline-block
       vertical-align: top
       width: 220px
-      margin-right: 15px
+      //margin-right: 15px
+      margin: 0 7px 40px
       &:last-child
-        margin-right: 0
+        //margin-right: 0
       .img-holder
         margin-bottom: 40px
         img
@@ -807,6 +819,7 @@ footer
         font-size: 16px
         letter-spacing: 0.08px
         line-height: 24px
+        text-align: left
 
 
 form
@@ -842,6 +855,8 @@ form
     color: #fff
     font-size: 18px
     letter-spacing: 0.09px
+    &:focus
+      border-color: #a1a8c2
 
 
 
@@ -860,6 +875,8 @@ form
     color: #fff
     font-size: 18px
     letter-spacing: 0.09px
+    &:focus
+      border-color: #a1a8c2
 
 
   input,textarea
@@ -875,7 +892,7 @@ form
 
   button
     border: 2px solid #fff
-    width: 176px
+    //width: 176px
     transition: all .3s
     font-family: "SegoeUI-Semibold", sans-serif
     color:  #ffffff
@@ -886,7 +903,7 @@ form
     background: none
     box-sizing: border-box
     vertical-align: middle
-    padding: 9px 0 14px
+    padding: 9px 30px 14px
     margin: auto
     display: block
     &:hover
@@ -1231,9 +1248,15 @@ footer
 
   .close
     position: absolute
-    top: 10px
+    top: 12px
     right: 23px
     cursor: pointer
+    width: 20px
+    height: 20px
+    background: url("../img/icons/close.png") no-repeat
+    background-size: 100%
+    &:hover
+      background-position: bottom left
 
 
 
@@ -1248,3 +1271,230 @@ footer
 
 
 
+@media screen and (max-width: 1000px)
+  .wrap
+    width: 720px
+
+
+  .services ul
+    margin: auto
+    li
+      padding: 0 5px
+
+
+  .mod_advantage
+    .advantages
+      ul
+        width: 720px
+
+  .mod_popular_article
+    width: 720px
+
+  footer
+    form
+      width: 450px
+      input[type="text"], input[type="email"],textarea
+        width: 100%!important
+
+      .row-form
+        margin-bottom: 0
+        > div
+          float: none
+          margin-bottom: 20px
+          &:nth-child(2n+1)
+            margin-right: 0
+  .top
+    .wrap
+      > div
+        padding-left: 25px
+        margin-right: 25px
+        a
+          font-size: 15px
+
+      .lang > div
+        margin-right: 10px
+
+
+      .skype a
+        line-height: 20px
+
+
+  header
+    .menu_wrap
+      .logo
+        margin-right: 30px
+        height: 60px
+      .menu ul li
+        margin-right: 29px
+        a
+          font-size: 18px
+
+  .slider
+    .item
+      .content-slider
+        width: 720px
+        h3
+          padding: 15px 30px 20px
+          font-size: 50px
+        p
+          font-size: 30px
+
+
+  .image-about
+    .content-image
+      width: 720px
+      margin-left: -360px
+
+
+  .mod_about
+    .img-holder
+      margin-right: 20px
+
+
+  .blog-items .item-article .img-holder,
+  .services-items .item-service .img-holder
+    width: 350px
+    margin-right: 30px
+  .services-items .item-service .text div .service_link
+    font-size: 18px
+    line-height: 20px
+
+
+@media screen and (max-width: 750px)
+  .wrap
+    width: 100%
+    box-sizing: border-box
+    padding: 0 20px
+  .top
+    display: none
+  .services-items,.blog-items
+    .item-service,.item-article
+      padding-top: 0
+      border: 0
+      padding-bottom: 0
+      margin-bottom: 50px
+
+      .img-holder
+        display: block
+        margin: auto
+        margin-bottom: 20px
+        float: none
+        width: auto
+        min-width: 280px
+        max-width: 400px
+
+      .text
+        h3, h3 a
+          font-size: 18px
+          margin-bottom: 15px
+          border: 0
+          line-height: 1em
+          height: auto
+          padding: 0
+
+          &:before,&:after
+            width: 0
+            height: 0
+        div
+          p
+            margin-bottom: 20px
+          .service_link
+            font-size: 15px
+            &:after
+              width: 6px
+              height: 10px
+              margin-left: 4px
+
+
+  #services_form
+    width: 320px
+    bottom: 0
+    left: 50%
+    margin-left: -160px
+    top: inherit
+    right: inherit
+    box-sizing: border-box
+    //border: 0
+                    
+  form
+    input[type="text"], input[type="email"],
+    textarea
+      width: 100%!important
+      font-size: 14px
+
+    input[type="text"], input[type="email"]
+      height: 40px
+      line-height: 40px
+      padding: 0 10px
+    .row-form
+      margin: auto!important
+      > div
+        float: none
+        margin: auto auto 20px!important
+        //margin-bottom: 20px
+    button
+      padding: 7px 20px 11px
+      font-size: 18px
+
+  footer
+    form
+      width: auto
+      float: none
+      margin-bottom: 50px
+
+
+
+
+
+  .pagination
+    margin-bottom: 50px
+    li
+      width: 13px
+      height: 22px
+      a
+        height: 22px
+      &.prev
+        margin-right: 75px
+
+
+  .article
+    margin-top: 30px
+    margin-bottom: 30px
+    h1
+
+      font-size: 24px
+      margin-bottom: 30px
+
+
+  .mod_about
+    margin-top: 30px
+    margin-bottom: 40px
+    h3
+      font-size: 24px
+      margin-bottom: 40px
+    .img-holder
+      margin: auto
+      margin-bottom: 30px
+      float: none
+      text-align: center
+
+
+
+  .image-about
+    height: 350px
+
+
+  .page_wrapper.about header .menu_wrap,
+  .page_wrapper.home header .menu_wrap,
+  header .menu_wrap
+    background: #fff
+    box-shadow: none
+    position: relative
+    top: inherit
+    left: inherit
+    width: 100%
+    z-index: 5
+
+@media screen and (max-width: 320px)
+  body
+    min-width: 320px

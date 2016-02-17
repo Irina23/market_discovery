@@ -87,7 +87,7 @@ body {
         color: #e11424;
         text-decoration: none; }
   .top .wrap .phone a {
-    margin-bottom: 7px; }
+    margin-bottom: 5px; }
     .top .wrap .phone a:last-child {
       margin-bottom: 0; }
   .top .wrap .email:after {
@@ -127,9 +127,9 @@ body {
     font-size: 36px;
     margin-bottom: 70px; }
   .services ul {
-    margin: 0 -10px; }
+    margin: 0 -10px;
+    overflow: hidden; }
     .services ul li {
-      display: inline-block;
       vertical-align: top;
       padding: 0 10px;
       width: 24%;
@@ -190,18 +190,19 @@ body {
     margin-bottom: 100px; }
   .mod_advantage .advantages {
     background: url("../img/bg/bg_advantage.jpg") no-repeat center;
-    background-size: 100%; }
+    background-size: cover; }
     .mod_advantage .advantages ul {
       width: 940px;
-      margin: auto;
-      padding: 25px 0 15px; }
+      margin: -10px auto;
+      padding: 25px 0 15px;
+      text-align: center; }
       .mod_advantage .advantages ul li {
         width: 300px;
-        float: left;
+        display: inline-block;
+        vertical-align: top;
         background: url("../img/bg/advantage.png") no-repeat bottom center;
         height: 292px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin: 0 6px 20px;
         overflow: hidden;
         padding: 0 10px;
         box-sizing: border-box; }
@@ -306,6 +307,8 @@ header .menu_wrap {
     vertical-align: middle;
     height: 77px;
     margin-right: 60px; }
+    header .menu_wrap .logo img {
+      height: 100%; }
   header .menu_wrap .menu {
     display: inline-block;
     vertical-align: middle; }
@@ -349,8 +352,9 @@ header .menu_wrap {
 .mod_popular_article {
   display: none;
   width: 940px;
-  margin: auto;
-  padding: 100px 0; }
+  margin: -10px auto;
+  padding: 100px 0 60px;
+  text-align: center; }
   .mod_popular_article h3 {
     text-align: center;
     line-height: 1em;
@@ -362,7 +366,7 @@ header .menu_wrap {
   .mod_popular_article .item-popular .item-article {
     width: 300px;
     display: inline-block;
-    margin-right: 15px; }
+    margin: 0 7px 40px; }
     .mod_popular_article .item-popular .item-article .img-holder {
       height: 240px;
       margin-bottom: 35px; }
@@ -455,7 +459,7 @@ header .menu_wrap {
 
 footer {
   background: url("../img/bg/bg_footer.jpg") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
   padding: 50px 0 30px;
   background-position: 50% 100%; }
   footer .wrap .mod_info_footer {
@@ -554,37 +558,40 @@ footer {
     color: #253d5c;
     font-size: 36px;
     margin-bottom: 75px; }
-  .mod_advantage2 .advantages ul li {
-    width: 300px;
-    float: left;
-    background: url("../img/bg/bg_advantage2.png") no-repeat bottom center;
-    height: 292px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    padding: 0 10px;
-    box-sizing: border-box; }
-    .mod_advantage2 .advantages ul li:nth-child(3n) {
-      margin-right: 0; }
-    .mod_advantage2 .advantages ul li .img-holder {
-      width: 91px;
-      height: 91px;
-      margin: auto;
-      margin-bottom: 20px; }
-    .mod_advantage2 .advantages ul li h4 {
-      margin-bottom: 20px;
-      line-height: 1em;
-      text-align: center;
-      color: #253d5c;
-      font-size: 18px;
-      font-family: "SegoeUI-Semibold", sans-serif;
-      letter-spacing: 0.09px; }
-    .mod_advantage2 .advantages ul li p {
-      text-align: center;
-      color: #253d5c;
-      font-size: 16px;
-      letter-spacing: 0.08px;
-      line-height: 24px; }
+  .mod_advantage2 .advantages ul {
+    margin: -10px auto;
+    text-align: center; }
+    .mod_advantage2 .advantages ul li {
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      background: url("../img/bg/bg_advantage2.png") no-repeat bottom center;
+      height: 292px;
+      margin: 0 6px 20px;
+      overflow: hidden;
+      padding: 0 10px;
+      box-sizing: border-box; }
+      .mod_advantage2 .advantages ul li:nth-child(3n) {
+        margin-right: 0; }
+      .mod_advantage2 .advantages ul li .img-holder {
+        width: 91px;
+        height: 91px;
+        margin: auto;
+        margin-bottom: 20px; }
+      .mod_advantage2 .advantages ul li h4 {
+        margin-bottom: 20px;
+        line-height: 1em;
+        text-align: center;
+        color: #253d5c;
+        font-size: 18px;
+        font-family: "SegoeUI-Semibold", sans-serif;
+        letter-spacing: 0.09px; }
+      .mod_advantage2 .advantages ul li p {
+        text-align: center;
+        color: #253d5c;
+        font-size: 16px;
+        letter-spacing: 0.08px;
+        line-height: 24px; }
 
 .mod_about {
   margin-top: 70px;
@@ -611,7 +618,7 @@ footer {
     line-height: 24px; }
 
 .mod_our_plus {
-  margin-bottom: 100px; }
+  margin-bottom: 60px; }
   .mod_our_plus h3 {
     text-align: center;
     line-height: 1em;
@@ -621,34 +628,35 @@ footer {
     font-size: 36px;
     margin-bottom: 100px;
     letter-spacing: 0.18px; }
-  .mod_our_plus .items .item-plus {
-    display: inline-block;
-    vertical-align: top;
-    width: 220px;
-    margin-right: 15px; }
-    .mod_our_plus .items .item-plus:last-child {
-      margin-right: 0; }
-    .mod_our_plus .items .item-plus .img-holder {
-      margin-bottom: 40px; }
-      .mod_our_plus .items .item-plus .img-holder img {
-        height: 142px; }
-    .mod_our_plus .items .item-plus h4 {
-      text-align: center;
-      color: #526680;
-      font-size: 18px;
-      letter-spacing: 0.09px;
-      line-height: 24px;
-      font-weight: normal;
-      font-family: "SegoeUI-Semibold", sans-serif;
-      margin-bottom: 20px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden; }
-    .mod_our_plus .items .item-plus .text {
-      color: #526680;
-      font-size: 16px;
-      letter-spacing: 0.08px;
-      line-height: 24px; }
+  .mod_our_plus .items {
+    margin: 0 -7px; }
+    .mod_our_plus .items .item-plus {
+      display: inline-block;
+      vertical-align: top;
+      width: 220px;
+      margin: 0 7px 40px; }
+      .mod_our_plus .items .item-plus .img-holder {
+        margin-bottom: 40px; }
+        .mod_our_plus .items .item-plus .img-holder img {
+          height: 142px; }
+      .mod_our_plus .items .item-plus h4 {
+        text-align: center;
+        color: #526680;
+        font-size: 18px;
+        letter-spacing: 0.09px;
+        line-height: 24px;
+        font-weight: normal;
+        font-family: "SegoeUI-Semibold", sans-serif;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+      .mod_our_plus .items .item-plus .text {
+        color: #526680;
+        font-size: 16px;
+        letter-spacing: 0.08px;
+        line-height: 24px;
+        text-align: left; }
 
 form .row-form {
   margin-bottom: 20px; }
@@ -678,6 +686,8 @@ form input[type="text"], form input[type="email"] {
   color: #fff;
   font-size: 18px;
   letter-spacing: 0.09px; }
+  form input[type="text"]:focus, form input[type="email"]:focus {
+    border-color: #a1a8c2; }
 
 form textarea {
   background: none;
@@ -690,6 +700,8 @@ form textarea {
   color: #fff;
   font-size: 18px;
   letter-spacing: 0.09px; }
+  form textarea:focus {
+    border-color: #a1a8c2; }
 
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
   color: #fff; }
@@ -705,7 +717,6 @@ form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
 
 form button {
   border: 2px solid #fff;
-  width: 176px;
   -webkit-transition: all .3s;
   transition: all .3s;
   font-family: "SegoeUI-Semibold", sans-serif;
@@ -717,7 +728,7 @@ form button {
   background: none;
   box-sizing: border-box;
   vertical-align: middle;
-  padding: 9px 0 14px;
+  padding: 9px 30px 14px;
   margin: auto;
   display: block; }
   form button:hover {
@@ -987,10 +998,183 @@ footer form {
       color: #fff; }
   #services_form .close {
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 23px;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/close.png") no-repeat;
+    background-size: 100%; }
+    #services_form .close:hover {
+      background-position: bottom left; }
   #services_form .row-form > div.error span.error {
     display: block; }
   #services_form .row-form > div.error input, #services_form .row-form > div.error textarea {
     border-color: #e11424; }
+
+@media screen and (max-width: 1000px) {
+  .wrap {
+    width: 720px; }
+  .services ul {
+    margin: auto; }
+    .services ul li {
+      padding: 0 5px; }
+  .mod_advantage .advantages ul {
+    width: 720px; }
+  .mod_popular_article {
+    width: 720px; }
+  footer form {
+    width: 450px; }
+    footer form input[type="text"], footer form input[type="email"], footer form textarea {
+      width: 100% !important; }
+    footer form .row-form {
+      margin-bottom: 0; }
+      footer form .row-form > div {
+        float: none;
+        margin-bottom: 20px; }
+        footer form .row-form > div:nth-child(2n+1) {
+          margin-right: 0; }
+  .top .wrap > div {
+    padding-left: 25px;
+    margin-right: 25px; }
+    .top .wrap > div a {
+      font-size: 15px; }
+  .top .wrap .lang > div {
+    margin-right: 10px; }
+  .top .wrap .skype a {
+    line-height: 20px; }
+  header .menu_wrap .logo {
+    margin-right: 30px;
+    height: 60px; }
+  header .menu_wrap .menu ul li {
+    margin-right: 29px; }
+    header .menu_wrap .menu ul li a {
+      font-size: 18px; }
+  .slider .item .content-slider {
+    width: 720px; }
+    .slider .item .content-slider h3 {
+      padding: 15px 30px 20px;
+      font-size: 50px; }
+    .slider .item .content-slider p {
+      font-size: 30px; }
+  .image-about .content-image {
+    width: 720px;
+    margin-left: -360px; }
+  .mod_about .img-holder {
+    margin-right: 20px; }
+  .blog-items .item-article .img-holder,
+  .services-items .item-service .img-holder {
+    width: 350px;
+    margin-right: 30px; }
+  .services-items .item-service .text div .service_link {
+    font-size: 18px;
+    line-height: 20px; } }
+
+@media screen and (max-width: 750px) {
+  .wrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px; }
+  .top {
+    display: none; }
+  .services-items .item-service, .services-items .item-article, .blog-items .item-service, .blog-items .item-article {
+    padding-top: 0;
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 50px; }
+    .services-items .item-service .img-holder, .services-items .item-article .img-holder, .blog-items .item-service .img-holder, .blog-items .item-article .img-holder {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      float: none;
+      width: auto;
+      min-width: 280px;
+      max-width: 400px; }
+    .services-items .item-service .text h3, .services-items .item-service .text h3 a, .services-items .item-article .text h3, .services-items .item-article .text h3 a, .blog-items .item-service .text h3, .blog-items .item-service .text h3 a, .blog-items .item-article .text h3, .blog-items .item-article .text h3 a {
+      font-size: 18px;
+      margin-bottom: 15px;
+      border: 0;
+      line-height: 1em;
+      height: auto;
+      padding: 0; }
+      .services-items .item-service .text h3:before, .services-items .item-service .text h3:after, .services-items .item-service .text h3 a:before, .services-items .item-service .text h3 a:after, .services-items .item-article .text h3:before, .services-items .item-article .text h3:after, .services-items .item-article .text h3 a:before, .services-items .item-article .text h3 a:after, .blog-items .item-service .text h3:before, .blog-items .item-service .text h3:after, .blog-items .item-service .text h3 a:before, .blog-items .item-service .text h3 a:after, .blog-items .item-article .text h3:before, .blog-items .item-article .text h3:after, .blog-items .item-article .text h3 a:before, .blog-items .item-article .text h3 a:after {
+        width: 0;
+        height: 0; }
+    .services-items .item-service .text div p, .services-items .item-article .text div p, .blog-items .item-service .text div p, .blog-items .item-article .text div p {
+      margin-bottom: 20px; }
+    .services-items .item-service .text div .service_link, .services-items .item-article .text div .service_link, .blog-items .item-service .text div .service_link, .blog-items .item-article .text div .service_link {
+      font-size: 15px; }
+      .services-items .item-service .text div .service_link:after, .services-items .item-article .text div .service_link:after, .blog-items .item-service .text div .service_link:after, .blog-items .item-article .text div .service_link:after {
+        width: 6px;
+        height: 10px;
+        margin-left: 4px; }
+  #services_form {
+    width: 320px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -160px;
+    top: inherit;
+    right: inherit;
+    box-sizing: border-box; }
+  form input[type="text"], form input[type="email"],
+  form textarea {
+    width: 100% !important;
+    font-size: 14px; }
+  form input[type="text"], form input[type="email"] {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px; }
+  form .row-form {
+    margin: auto !important; }
+    form .row-form > div {
+      float: none;
+      margin: auto auto 20px !important; }
+  form button {
+    padding: 7px 20px 11px;
+    font-size: 18px; }
+  footer form {
+    width: auto;
+    float: none;
+    margin-bottom: 50px; }
+  .pagination {
+    margin-bottom: 50px; }
+    .pagination li {
+      width: 13px;
+      height: 22px; }
+      .pagination li a {
+        height: 22px; }
+      .pagination li.prev {
+        margin-right: 75px; }
+  .article {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .article h1 {
+      font-size: 24px;
+      margin-bottom: 30px; }
+  .mod_about {
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    .mod_about h3 {
+      font-size: 24px;
+      margin-bottom: 40px; }
+    .mod_about .img-holder {
+      margin: auto;
+      margin-bottom: 30px;
+      float: none;
+      text-align: center; }
+  .image-about {
+    height: 350px; }
+  .page_wrapper.about header .menu_wrap,
+  .page_wrapper.home header .menu_wrap,
+  header .menu_wrap {
+    background: #fff;
+    box-shadow: none;
+    position: relative;
+    top: inherit;
+    left: inherit;
+    width: 100%;
+    z-index: 5; } }
+
+@media screen and (max-width: 320px) {
+  body {
+    min-width: 320px; } }
