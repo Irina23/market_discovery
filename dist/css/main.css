@@ -131,8 +131,8 @@ body {
     overflow: hidden; }
     .services ul li {
       vertical-align: top;
-      padding: 0 10px;
-      width: 24%;
+      padding: 0 20px;
+      width: 33%;
       text-align: center;
       box-sizing: border-box;
       display: none; }
@@ -242,7 +242,7 @@ body {
     .slider .item .content-slider {
       width: 940px;
       margin: auto;
-      padding-top: 180px;
+      padding-top: 280px;
       text-align: center; }
       .slider .item .content-slider h3 {
         font-family: "SegoeUI-Semibold", sans-serif;
@@ -257,13 +257,13 @@ body {
       .slider .item .content-slider p {
         font-family: "SegoeUI-Semibold", sans-serif;
         color: #253d5c;
-        font-size: 48px;
+        font-size: 40px;
         letter-spacing: 0.24px;
         line-height: 1em;
         text-align: center;
         background: rgba(255, 255, 255, 0.6);
         padding: 30px;
-        margin-bottom: 15px; }
+        margin-bottom: 100px; }
       .slider .item .content-slider a {
         background: #e11424;
         margin: auto;
@@ -885,6 +885,10 @@ footer form {
     font-size: 16px;
     letter-spacing: 0.08px;
     line-height: 24px; }
+  .article .img-left {
+    float: left;
+    width: 400px;
+    margin-right: 60px; }
 
 .services-items {
   margin-top: 10px;
@@ -1069,7 +1073,7 @@ footer form {
       .services ul li {
         padding: 0 5px;
         margin-bottom: 35px;
-        width: 48%; }
+        width: 32%; }
   .mod_advantage .advantages ul {
     width: 720px; }
   .mod_popular_article {
@@ -1119,7 +1123,10 @@ footer form {
     margin-right: 30px; }
   .services-items .item-service .text div .service_link {
     font-size: 18px;
-    line-height: 20px; } }
+    line-height: 20px; }
+  .article .img-left {
+    width: 350px;
+    margin-right: 30px; } }
 
 @media screen and (max-width: 750px) {
   .wrap {
@@ -1389,9 +1396,17 @@ footer form {
       footer .wrap .mod_info_footer > div h4 {
         margin-bottom: 7px; }
       footer .wrap .mod_info_footer > div h4, footer .wrap .mod_info_footer > div p, footer .wrap .mod_info_footer > div p a {
-        font-size: 14px; } }
+        font-size: 14px; }
+  .article .img-left {
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    float: none;
+    text-align: center; } }
 
 @media screen and (max-width: 360px) {
+  .mod_popular_article .item-popular .item-article {
+    width: 100%; }
   body {
     min-width: 320px; }
   .mod_advantage2.mobile {

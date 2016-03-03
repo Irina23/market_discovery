@@ -148,8 +148,8 @@ jQuery(document).ready(function() {
 
         jQuery(window).scroll( function(){
             if ( jQuery(window).scrollTop() > 0 ) {
-                jQuery(".home .services li:nth-child(1),.services li:nth-child(2)").addClass('animated fadeInLeft');
-                jQuery(".home .services li:nth-child(3),.services li:nth-child(4)").addClass('animated fadeInRight');
+                jQuery(".home .services li").addClass('animated zoomIn');
+                //jQuery(".home .services li:nth-child(3),.services li:nth-child(4)").addClass('animated fadeInRight');
                 jQuery(".home .services li").css("display", "inline-block");
 
 
@@ -192,4 +192,22 @@ jQuery(document).ready(function() {
 
         });
     }
+
+
+
+    jQuery(".menu").on("click","a[href^='#']", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id  = jQuery(this).attr('href'),
+
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            //top = jQuery(id).offset().top;
+            top = jQuery(document).height();
+
+        //анимируем переход на расстояние - top за 1500 мс
+        jQuery('body,html').animate({scrollTop: top}, 1500);
+    });
+
 });
