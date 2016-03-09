@@ -808,7 +808,7 @@ footer form {
         width: 100%; }
     .blog-items .item-article .text {
       overflow: hidden; }
-      .blog-items .item-article .text h3 a {
+      .blog-items .item-article .text h3 {
         font-weight: normal;
         font-family: "SegoeUI-Semibold", sans-serif;
         display: block;
@@ -827,7 +827,7 @@ footer form {
         border-bottom: 3px solid #cdd6ea;
         padding-left: 60px;
         position: relative; }
-        .blog-items .item-article .text h3 a:after {
+        .blog-items .item-article .text h3:after {
           position: absolute;
           width: 46px;
           height: 40px;
@@ -836,7 +836,7 @@ footer form {
           top: 0;
           content: "";
           z-index: 0; }
-        .blog-items .item-article .text h3 a:before {
+        .blog-items .item-article .text h3:before {
           position: absolute;
           width: 30px;
           height: 30px;
@@ -846,16 +846,45 @@ footer form {
           content: "";
           z-index: 1;
           background-size: 100%; }
-        .blog-items .item-article .text h3 a:hover {
-          text-decoration: none;
-          color: #e11424;
-          -webkit-transition: all .3s;
-          transition: all .3s; }
-      .blog-items .item-article .text div {
+      .blog-items .item-article .text .text-holder .text-content {
         color: #526680;
         font-size: 16px;
         letter-spacing: 0.08px;
         line-height: 24px; }
+        .blog-items .item-article .text .text-holder .text-content.more {
+          height: 290px;
+          overflow: hidden; }
+          .blog-items .item-article .text .text-holder .text-content.more + .readmore .show {
+            display: block; }
+          .blog-items .item-article .text .text-holder .text-content.more.open {
+            height: auto; }
+            .blog-items .item-article .text .text-holder .text-content.more.open + .readmore .show {
+              display: none; }
+            .blog-items .item-article .text .text-holder .text-content.more.open + .readmore .hide {
+              display: block; }
+      .blog-items .item-article .text .text-holder .readmore .show,
+      .blog-items .item-article .text .text-holder .readmore .hide {
+        font-family: "SegoeUI", sans-serif;
+        color: #e11424;
+        font-size: 16px;
+        letter-spacing: 0.08px;
+        line-height: 24px;
+        position: relative;
+        text-align: left;
+        cursor: pointer;
+        display: none; }
+        .blog-items .item-article .text .text-holder .readmore .show:hover,
+        .blog-items .item-article .text .text-holder .readmore .hide:hover {
+          text-decoration: underline; }
+        .blog-items .item-article .text .text-holder .readmore .show:after,
+        .blog-items .item-article .text .text-holder .readmore .hide:after {
+          content: "";
+          background: url("../img/icons/readmore.png") no-repeat;
+          display: inline-block;
+          background-size: 100%;
+          width: 4px;
+          height: 8px;
+          margin-left: 6px; }
 
 .article {
   margin-top: 70px;
@@ -925,67 +954,97 @@ footer form {
         transition: all .3s;
         margin-bottom: 20px;
         border-bottom: 3px solid #e11424;
-        padding-left: 60px;
         position: relative;
         box-sizing: border-box; }
-        .services-items .item-service .text h3:after {
-          position: absolute;
+        .services-items .item-service .text h3 span {
+          padding-left: 10px;
+          display: inline-block;
+          vertical-align: top; }
+        .services-items .item-service .text h3 .img-holder {
+          position: relative;
           width: 46px;
           height: 40px;
-          background: #e11424;
-          left: 0;
-          top: 0;
+          margin-right: 0;
+          z-index: 1; }
+          .services-items .item-service .text h3 .img-holder img {
+            width: 34px;
+            height: 34px;
+            margin-top: 3px;
+            margin-left: 6px;
+            position: relative;
+            z-index: 1; }
+          .services-items .item-service .text h3 .img-holder:after {
+            position: absolute;
+            width: 46px;
+            height: 40px;
+            background: #e11424;
+            left: 0;
+            top: 0;
+            content: "";
+            z-index: 0; }
+      .services-items .item-service .text .text-holder .service_link {
+        display: block;
+        color: #e11424;
+        font-size: 20px;
+        letter-spacing: 0.1px;
+        line-height: 24px;
+        font-family: "SegoeUI-Semibold", sans-serif;
+        position: relative;
+        cursor: pointer; }
+        .services-items .item-service .text .text-holder .service_link:hover {
+          text-decoration: none; }
+        .services-items .item-service .text .text-holder .service_link:after {
           content: "";
-          z-index: 0; }
-        .services-items .item-service .text h3:before {
-          position: absolute;
-          width: 34px;
-          height: 34px;
-          background: url("../img/icons/marketing.png") no-repeat;
-          left: 6px;
-          top: 3px;
-          content: "";
-          z-index: 1;
-          background-size: 100%; }
-      .services-items .item-service .text div {
+          background: url("../img/icons/readmore2.png") no-repeat;
+          background-size: 100%;
+          display: inline-block;
+          vertical-align: middle;
+          width: 7px;
+          height: 12px;
+          margin-left: 7px; }
+      .services-items .item-service .text .text-holder .text-content {
         color: #526680;
         font-size: 16px;
         letter-spacing: 0.08px;
         line-height: 24px; }
-        .services-items .item-service .text div p {
+        .services-items .item-service .text .text-holder .text-content p {
           margin-bottom: 30px; }
-        .services-items .item-service .text div .service_link {
-          display: block;
+        .services-items .item-service .text .text-holder .text-content.more {
+          height: 275px;
+          overflow: hidden; }
+          .services-items .item-service .text .text-holder .text-content.more + .readmore .show {
+            display: block; }
+          .services-items .item-service .text .text-holder .text-content.more.open {
+            height: auto; }
+            .services-items .item-service .text .text-holder .text-content.more.open + .readmore .show {
+              display: none; }
+            .services-items .item-service .text .text-holder .text-content.more.open + .readmore .hide {
+              display: block; }
+      .services-items .item-service .text .text-holder .readmore {
+        margin-bottom: 20px; }
+        .services-items .item-service .text .text-holder .readmore .show,
+        .services-items .item-service .text .text-holder .readmore .hide {
+          font-family: "SegoeUI", sans-serif;
           color: #e11424;
-          font-size: 20px;
-          letter-spacing: 0.1px;
+          font-size: 16px;
+          letter-spacing: 0.08px;
           line-height: 24px;
-          font-family: "SegoeUI-Semibold", sans-serif;
           position: relative;
-          cursor: pointer; }
-          .services-items .item-service .text div .service_link:hover {
-            text-decoration: none; }
-          .services-items .item-service .text div .service_link:after {
+          text-align: left;
+          cursor: pointer;
+          display: none; }
+          .services-items .item-service .text .text-holder .readmore .show:hover,
+          .services-items .item-service .text .text-holder .readmore .hide:hover {
+            text-decoration: underline; }
+          .services-items .item-service .text .text-holder .readmore .show:after,
+          .services-items .item-service .text .text-holder .readmore .hide:after {
             content: "";
-            background: url("../img/icons/readmore2.png") no-repeat;
-            background-size: 100%;
+            background: url("../img/icons/readmore.png") no-repeat;
             display: inline-block;
-            vertical-align: middle;
-            width: 7px;
-            height: 12px;
-            margin-left: 7px; }
-    .services-items .item-service#marketing .text h3:before {
-      background: url("../img/icons/marketing.png") no-repeat;
-      background-size: 100%; }
-    .services-items .item-service#business_plan .text h3:before {
-      background: url("../img/icons/business_plan.png") no-repeat;
-      background-size: 100%; }
-    .services-items .item-service#web .text h3:before {
-      background: url("../img/icons/web.png") no-repeat;
-      background-size: 100%; }
-    .services-items .item-service#design .text h3:before {
-      background: url("../img/icons/design.png") no-repeat;
-      background-size: 100%; }
+            background-size: 100%;
+            width: 4px;
+            height: 8px;
+            margin-left: 6px; }
 
 .pagination {
   text-align: center;
@@ -1014,7 +1073,7 @@ footer form {
       .pagination li a:hover {
         opacity: 1; }
 
-#services_form {
+.services_form {
   display: none;
   width: 670px;
   background: #ffffff;
@@ -1025,29 +1084,29 @@ footer form {
   z-index: 10;
   top: 0;
   right: 0; }
-  #services_form input[type="text"], #services_form textarea,
-  #services_form button, #services_form input[type="email"] {
+  .services_form input[type="text"], .services_form textarea,
+  .services_form button, .services_form input[type="email"] {
     border-color: #d0d7e4;
     color: #858da5; }
-  #services_form input::-webkit-input-placeholder, #services_form textarea::-webkit-input-placeholder {
+  .services_form input::-webkit-input-placeholder, .services_form textarea::-webkit-input-placeholder {
     color: #858da5; }
-  #services_form input::-moz-placeholder, #services_form textarea::-moz-placeholder {
+  .services_form input::-moz-placeholder, .services_form textarea::-moz-placeholder {
     color: #858da5; }
-  #services_form input:-moz-placeholder, #services_form textarea:-moz-placeholder {
+  .services_form input:-moz-placeholder, .services_form textarea:-moz-placeholder {
     color: #858da5; }
-  #services_form input:-ms-input-placeholder, #services_form textarea:-ms-input-placeholder {
+  .services_form input:-ms-input-placeholder, .services_form textarea:-ms-input-placeholder {
     color: #858da5; }
-  #services_form input#url {
+  .services_form input#url {
     width: 620px; }
-  #services_form span.error {
+  .services_form span.error {
     color: #e11424; }
-  #services_form button {
+  .services_form button {
     border-color: #253d5c;
     color: #253d5c; }
-    #services_form button:hover {
+    .services_form button:hover {
       background: #253d5c;
       color: #fff; }
-  #services_form .close {
+  .services_form .close {
     position: absolute;
     top: 12px;
     right: 23px;
@@ -1056,11 +1115,11 @@ footer form {
     height: 20px;
     background: url("../img/icons/close.png") no-repeat;
     background-size: 100%; }
-    #services_form .close:hover {
+    .services_form .close:hover {
       background-position: bottom left; }
-  #services_form .row-form > div.error span.error {
+  .services_form .row-form > div.error span.error {
     display: block; }
-  #services_form .row-form > div.error input, #services_form .row-form > div.error textarea {
+  .services_form .row-form > div.error input, .services_form .row-form > div.error textarea {
     border-color: #e11424; }
 
 @media screen and (max-width: 1000px) {
@@ -1152,21 +1211,26 @@ footer form {
       font-size: 18px;
       margin-bottom: 15px;
       border: 0;
-      line-height: 1em;
+      line-height: 1.2em;
       height: auto;
       padding: 0; }
       .services-items .item-service .text h3:before, .services-items .item-service .text h3:after, .services-items .item-service .text h3 a:before, .services-items .item-service .text h3 a:after, .services-items .item-article .text h3:before, .services-items .item-article .text h3:after, .services-items .item-article .text h3 a:before, .services-items .item-article .text h3 a:after, .blog-items .item-service .text h3:before, .blog-items .item-service .text h3:after, .blog-items .item-service .text h3 a:before, .blog-items .item-service .text h3 a:after, .blog-items .item-article .text h3:before, .blog-items .item-article .text h3:after, .blog-items .item-article .text h3 a:before, .blog-items .item-article .text h3 a:after {
         width: 0;
         height: 0; }
-    .services-items .item-service .text div p, .services-items .item-article .text div p, .blog-items .item-service .text div p, .blog-items .item-article .text div p {
+      .services-items .item-service .text h3 .img-holder, .services-items .item-service .text h3 a .img-holder, .services-items .item-article .text h3 .img-holder, .services-items .item-article .text h3 a .img-holder, .blog-items .item-service .text h3 .img-holder, .blog-items .item-service .text h3 a .img-holder, .blog-items .item-article .text h3 .img-holder, .blog-items .item-article .text h3 a .img-holder {
+        display: none; }
+      .services-items .item-service .text h3 span, .services-items .item-service .text h3 a span, .services-items .item-article .text h3 span, .services-items .item-article .text h3 a span, .blog-items .item-service .text h3 span, .blog-items .item-service .text h3 a span, .blog-items .item-article .text h3 span, .blog-items .item-article .text h3 a span {
+        padding-left: 0;
+        line-height: 1em; }
+    .services-items .item-service .text .text-holder p, .services-items .item-article .text .text-holder p, .blog-items .item-service .text .text-holder p, .blog-items .item-article .text .text-holder p {
       margin-bottom: 20px; }
-    .services-items .item-service .text div .service_link, .services-items .item-article .text div .service_link, .blog-items .item-service .text div .service_link, .blog-items .item-article .text div .service_link {
+    .services-items .item-service .text .text-holder .service_link, .services-items .item-article .text .text-holder .service_link, .blog-items .item-service .text .text-holder .service_link, .blog-items .item-article .text .text-holder .service_link {
       font-size: 15px; }
-      .services-items .item-service .text div .service_link:after, .services-items .item-article .text div .service_link:after, .blog-items .item-service .text div .service_link:after, .blog-items .item-article .text div .service_link:after {
+      .services-items .item-service .text .text-holder .service_link:after, .services-items .item-article .text .text-holder .service_link:after, .blog-items .item-service .text .text-holder .service_link:after, .blog-items .item-article .text .text-holder .service_link:after {
         width: 6px;
         height: 10px;
         margin-left: 4px; }
-  #services_form {
+  .services_form {
     width: 320px;
     bottom: 0;
     left: 50%;

@@ -88,7 +88,7 @@ jQuery(document).ready(function() {
 
 
 
-    jQuery(".contact_footer,#services_form").validate({
+    jQuery(".contact_footer,.services_form").validate({
 
         rules:{
 
@@ -209,5 +209,25 @@ jQuery(document).ready(function() {
         //анимируем переход на расстояние - top за 1500 мс
         jQuery('body,html').animate({scrollTop: top}, 1500);
     });
+
+
+
+
+    jQuery(".text-content").each(function() {
+        if (jQuery(this).height()>290){
+            jQuery(this).addClass("more");
+        }
+    });
+
+
+
+    jQuery( ".readmore .show" ).click(function(){
+        jQuery(this).parent().prev().addClass("open");
+    });
+    jQuery( ".readmore .hide" ).click(function(){
+        jQuery(this).parent().prev().removeClass("open");
+    });
+
+
 
 });

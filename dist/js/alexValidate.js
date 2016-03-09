@@ -38,6 +38,8 @@
 							return /^[0-9a-zA-Z._-]+@[0-9a-zA-Z_-]+\.[a-zA-Z._-]+/.test(data);
 						case 'number':
 							return /^[0-9]/.test(data);
+						case 'empty':
+							return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z0-9]+/.test(data);
 						default:
 							return true;
 					}

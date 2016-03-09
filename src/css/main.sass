@@ -1002,7 +1002,7 @@ footer
     .text
       overflow: hidden
       h3
-        a
+
           font-weight: normal
           font-family: "SegoeUI-Semibold", sans-serif
           display: block
@@ -1041,19 +1041,53 @@ footer
             z-index: 1
             background-size: 100%
 
-          &:hover
-            text-decoration: none
-            color: $color-red
-            transition: all .3s
 
 
-      div
 
-        color:  #526680
-        font-size: 16px
-        letter-spacing: 0.08px
-        line-height: 24px
+      .text-holder
+        .text-content
 
+          color:  #526680
+          font-size: 16px
+          letter-spacing: 0.08px
+          line-height: 24px
+          &.more
+            height: 290px
+            overflow: hidden
+            & +.readmore
+                .show
+                  display: block
+            &.open
+                height: auto
+                & +.readmore
+                  .show
+                    display: none
+                  .hide
+                    display: block
+
+        .readmore
+          .show,
+          .hide
+            font-family: "SegoeUI", sans-serif
+            color: #e11424
+            font-size: 16px
+            letter-spacing: 0.08px
+            line-height: 24px
+            position: relative
+            text-align: left
+            cursor: pointer
+            display: none
+
+            &:hover
+              text-decoration: underline
+            &:after
+                content: ""
+                background: url("../img/icons/readmore.png") no-repeat
+                display: inline-block
+                background-size: 100%
+                width: 4px
+                height: 8px
+                margin-left: 6px
 
 
 
@@ -1133,41 +1167,49 @@ footer
           transition: all .3s
           margin-bottom: 20px
           border-bottom: 3px solid $color-red
-          padding-left: 60px
+          //padding-left: 60px
           position: relative
           box-sizing: border-box
-          &:after
-            position: absolute
+          span
+            padding-left: 10px
+            display: inline-block
+            vertical-align: top
+
+
+          .img-holder
+            position: relative
             width: 46px
             height: 40px
-            background: $color-red
-            left: 0
-            top: 0
-            content: ""
-            z-index: 0
-          &:before
-            position: absolute
-            width: 34px
-            height: 34px
-            background: url("../img/icons/marketing.png") no-repeat
-            left: 6px
-            top: 3px
-            content: ""
+            margin-right: 0
+
+            //left: 6px
+            //top: 3px
             z-index: 1
-            background-size: 100%
+            img
+              width: 34px
+              height: 34px
+              margin-top: 3px
+              margin-left: 6px
+              position: relative
+              z-index: 1
+
+
+            &:after
+              position: absolute
+              width: 46px
+              height: 40px
+              background: $color-red
+              left: 0
+              top: 0
+              content: ""
+              z-index: 0
 
 
 
 
-      div
 
-        color:  #526680
-        font-size: 16px
-        letter-spacing: 0.08px
-        line-height: 24px
-        p
-          margin-bottom: 30px
 
+      .text-holder
         .service_link
           display: block
           color: $color-red
@@ -1177,11 +1219,11 @@ footer
           font-family: "SegoeUI-Semibold", sans-serif
           position: relative
           cursor: pointer
-          
+
           &:hover
             text-decoration: none
 
-          &:after 
+          &:after
             content: ""
             background: url("../img/icons/readmore2.png") no-repeat
             background-size: 100%
@@ -1190,41 +1232,58 @@ footer
             width: 7px
             height: 12px
             margin-left: 7px
+        .text-content
+
+          color:  #526680
+          font-size: 16px
+          letter-spacing: 0.08px
+          line-height: 24px
+
+          p
+            margin-bottom: 30px
+          &.more
+            height: 275px
+            overflow: hidden
+            & +.readmore
+              .show
+                display: block
+            &.open
+              height: auto
+              & +.readmore
+                .show
+                  display: none
+                .hide
+                  display: block
+
+        .readmore
+          margin-bottom: 20px
+          .show,
+          .hide
+            font-family: "SegoeUI", sans-serif
+            color: #e11424
+            font-size: 16px
+            letter-spacing: 0.08px
+            line-height: 24px
+            position: relative
+            text-align: left
+            cursor: pointer
+            display: none
+
+            &:hover
+              text-decoration: underline
+            &:after
+              content: ""
+              background: url("../img/icons/readmore.png") no-repeat
+              display: inline-block
+              background-size: 100%
+              width: 4px
+              height: 8px
+              margin-left: 6px
 
             
 
 
-    &#marketing
-      .text
 
-        h3
-          &:before
-            background: url("../img/icons/marketing.png") no-repeat
-            background-size: 100%
-
-    &#business_plan
-      .text
-
-        h3
-          &:before
-            background: url("../img/icons/business_plan.png") no-repeat
-            background-size: 100%
-
-    &#web
-      .text
-
-        h3
-          &:before
-            background: url("../img/icons/web.png") no-repeat
-            background-size: 100%
-
-    &#design
-      .text
-
-        h3
-          &:before
-            background: url("../img/icons/design.png") no-repeat
-            background-size: 100%
 
 
 .pagination
@@ -1263,7 +1322,7 @@ footer
 
 
 
-#services_form
+.services_form
   display: none
   width: 670px
   //height: 470px
@@ -1469,14 +1528,19 @@ footer
           font-size: 18px
           margin-bottom: 15px
           border: 0
-          line-height: 1em
+          line-height: 1.2em
           height: auto
           padding: 0
 
           &:before,&:after
             width: 0
             height: 0
-        div
+          .img-holder
+            display: none
+          span
+            padding-left: 0
+            line-height: 1em
+        .text-holder
           p
             margin-bottom: 20px
           .service_link
@@ -1487,7 +1551,7 @@ footer
               margin-left: 4px
 
 
-  #services_form
+  .services_form
     width: 320px
     bottom: 0
     left: 50%
