@@ -762,8 +762,10 @@ form input:-moz-placeholder, form textarea:-moz-placeholder {
 form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
   color: #fff; }
 
-form button {
+form button, form .btn.submit {
+  cursor: pointer;
   border: 2px solid #fff;
+  width: 180px;
   -webkit-transition: all .3s;
   transition: all .3s;
   font-family: "SegoeUI-Semibold", sans-serif;
@@ -778,7 +780,7 @@ form button {
   padding: 9px 30px 14px;
   margin: auto;
   display: block; }
-  form button:hover {
+  form button:hover, form .btn.submit:hover {
     background: #fff;
     color: #253d5c;
     -webkit-transition: all .3s;
@@ -1099,7 +1101,7 @@ footer form {
   top: 0;
   right: 0; }
   .services_form input[type="text"], .services_form textarea,
-  .services_form button, .services_form input[type="email"] {
+  .services_form button, .services_form input[type="email"], .services_form .btn.submit {
     border-color: #d0d7e4;
     color: #858da5; }
   .services_form input::-webkit-input-placeholder, .services_form textarea::-webkit-input-placeholder {
@@ -1114,10 +1116,10 @@ footer form {
     width: 620px; }
   .services_form span.error {
     color: #e11424; }
-  .services_form button {
+  .services_form button, .services_form .btn.submit {
     border-color: #253d5c;
     color: #253d5c; }
-    .services_form button:hover {
+    .services_form button:hover, .services_form .btn.submit:hover {
       background: #253d5c;
       color: #fff; }
   .services_form .close {
