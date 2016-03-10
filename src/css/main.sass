@@ -159,13 +159,13 @@ body
     margin: 0 -10px
     overflow: hidden
     li
-      //display: inline-block
+      display: inline-block
       vertical-align: top
       padding: 0 20px
       width: 33%
       text-align: center
       box-sizing: border-box
-      display: none
+      opacity: 0
       .img-holder
         margin-bottom: 30px
         img
@@ -214,9 +214,10 @@ body
 
 
 .mod_advantage
-  display: none
+  //display: none
   &.mobile
-    display: none!important
+    display: none
+    opacity: 1!important
   h3
     text-align: center
     line-height: 1em
@@ -468,7 +469,7 @@ header
 
 
 .mod_popular_article
-  display: none
+  opacity: 0
 
   width: 940px
   margin: -10px auto
@@ -1682,6 +1683,7 @@ footer
       display: block
       margin: auto auto 50px
       width: 300px
+      opacity: 1!important
       h3
         font-size: 24px
         margin-bottom: 40px
@@ -1718,7 +1720,7 @@ footer
       margin-bottom: 40px
     ul
       li
-        display: block!important
+        opacity: 1!important
         width: 100%
         margin:  0 auto 35px
         .img-holder
@@ -1761,7 +1763,7 @@ footer
     width: 100%
     padding: 40px 20px 10px
     box-sizing: border-box
-    display: block!important
+    opacity: 1!important
     animation-name: inherit!important
     animation-duration: inherit!important
 
@@ -1776,9 +1778,11 @@ footer
     animation-duration: inherit!important
 
   .mod_advantage
-    display: none!important
+    //display: none!important
+    opacity: 0
     &.mobile
-      display: block!important
+      //display: block!important
+      opacity: 1!important
       margin: auto
       width: 100%
       .advantages
