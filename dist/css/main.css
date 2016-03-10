@@ -519,6 +519,10 @@ footer {
       line-height: 1em;
       display: inline-block;
       vertical-align: middle; }
+      footer .wrap .mod_info_footer > div.copyright a {
+        display: block;
+        line-height: 1.5em;
+        margin-top: 10px; }
       footer .wrap .mod_info_footer > div:last-child {
         margin-bottom: 0; }
       footer .wrap .mod_info_footer > div h4 {
