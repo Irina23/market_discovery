@@ -974,6 +974,7 @@ form
     padding: 9px 30px 14px
     margin: auto
     display: block
+    margin-top: 40px
     &:hover
       background: #fff
       color: $main-blue
@@ -1528,6 +1529,11 @@ footer
     width: 100%
     box-sizing: border-box
     padding: 0 20px
+  .page_wrapper.about
+    .wrap
+      padding: 0
+      .mod_our_plus, .mod_about
+        padding: 0 20px
   .top
     display: none
   .services-items,.blog-items
@@ -1600,9 +1606,10 @@ footer
         float: none
         margin: auto auto 20px!important
         //margin-bottom: 20px
-    button
+    button,.btn.submit
       padding: 7px 20px 11px
       font-size: 18px
+      margin: auto
 
   footer
 
@@ -1687,7 +1694,7 @@ footer
     &.mobile
       display: block
       margin: auto auto 50px
-      width: 300px
+      //width: 300px
       opacity: 1!important
       h3
         font-size: 24px
@@ -1876,6 +1883,9 @@ footer
               margin-bottom: 7px
             h4,p, p a
               font-size: 14px
+              overflow: hidden
+              text-overflow: ellipsis
+
 
 
 
@@ -1896,4 +1906,4 @@ footer
     min-width: 320px
 
   .mod_advantage2.mobile
-      margin: auto 0 50px -10px
+      //margin: auto 0 50px -10px

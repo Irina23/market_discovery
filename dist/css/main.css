@@ -785,7 +785,8 @@ form button, form .btn.submit {
   vertical-align: middle;
   padding: 9px 30px 14px;
   margin: auto;
-  display: block; }
+  display: block;
+  margin-top: 40px; }
   form button:hover, form .btn.submit:hover {
     background: #fff;
     color: #253d5c;
@@ -1216,6 +1217,10 @@ footer form {
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px; }
+  .page_wrapper.about .wrap {
+    padding: 0; }
+    .page_wrapper.about .wrap .mod_our_plus, .page_wrapper.about .wrap .mod_about {
+      padding: 0 20px; }
   .top {
     display: none; }
   .services-items .item-service, .services-items .item-article, .blog-items .item-service, .blog-items .item-article {
@@ -1275,9 +1280,10 @@ footer form {
     form .row-form > div {
       float: none;
       margin: auto auto 20px !important; }
-  form button {
+  form button, form .btn.submit {
     padding: 7px 20px 11px;
-    font-size: 18px; }
+    font-size: 18px;
+    margin: auto; }
   footer form, footer .confirm-container-feedback {
     width: auto;
     float: none;
@@ -1337,7 +1343,6 @@ footer form {
     .mod_advantage2.mobile, .mod_advantage.mobile {
       display: block;
       margin: auto auto 50px;
-      width: 300px;
       opacity: 1 !important; }
       .mod_advantage2.mobile h3, .mod_advantage.mobile h3 {
         font-size: 24px;
@@ -1485,7 +1490,9 @@ footer form {
       footer .wrap .mod_info_footer > div h4 {
         margin-bottom: 7px; }
       footer .wrap .mod_info_footer > div h4, footer .wrap .mod_info_footer > div p, footer .wrap .mod_info_footer > div p a {
-        font-size: 14px; }
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
   .article .img-left {
     width: auto;
     margin: auto;
@@ -1497,6 +1504,4 @@ footer form {
   .mod_popular_article .item-popular .item-article {
     width: 100%; }
   body {
-    min-width: 320px; }
-  .mod_advantage2.mobile {
-    margin: auto 0 50px -10px; } }
+    min-width: 320px; } }
